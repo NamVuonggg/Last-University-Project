@@ -12,14 +12,17 @@ const store = useHomeStore();
         <RouterLink to ="/home" style="text-decoration: none; color: inherit;">
             <div class="flex align-items-center gap-2">
                 <img src="https://cdn-icons-png.flaticon.com/128/9523/9523790.png" width="40px" alt="">
-                <span class="font-bold">THESIS ASSISTANT BRO</span>
+                <span class="font-bold">THESIS ASSISTANT</span>
             </div>
         </RouterLink>
         <IconField iconPosition="left">
             <InputIcon class="pi pi-search"></InputIcon>
             <InputText v-model="store.navSearchValue" placeholder="Search" class="w-30rem"/>
         </IconField>
-        <div class="flex gap-2">
+        <div class="flex gap-2 align-items-center">
+            <RouterLink to="/home" style="text-decoration: none; color: inherit;">
+                <i class="pi pi-home px-3" style="font-size: 22px; opacity: 0.3;"></i>
+            </RouterLink>
             <RouterLink to="/" style="text-decoration: none; color: inherit;">
                 <div class="card flex justify-content-center">
                     <ToggleButton v-model="store.checked" onLabel="Locked" offLabel="Unlocked" onIcon="pi pi-lock" 
@@ -34,6 +37,5 @@ const store = useHomeStore();
 </template>
 
 
-<style>
-
+<style lang="scss" scoped>
 </style>

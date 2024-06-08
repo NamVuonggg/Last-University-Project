@@ -15,7 +15,7 @@ export const router = createRouter({
         name: "homeview",
         component: HomeView 
       },
-      { path: "/how",
+      { path: "/howdidicode",
         name: "howdidicode",
         component: HowDidICode 
       }

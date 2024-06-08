@@ -5,7 +5,7 @@
     <div class="container mt-7 flex flex-column">
         <div class="flex gap-3">
             <Button class="w-9rem p-3 mb-4"> Quick Start <i class="pi pi-angle-right ml-2" style="font-size: 1rem"></i></Button>
-            <Button class="w-10rem p-3 mb-4 bg-yellow-400 border-none"> Add a memo <i class="pi pi-angle-right ml-2" style="font-size: 1rem"></i></Button>
+            <Button class="w-10rem p-3 mb-4 bg-orange-400 border-none"> Add a memo <i class="pi pi-angle-right ml-2" style="font-size: 1rem"></i></Button>
         </div>
         <img src="https://www.betterup.com/hubfs/Blog%20Images/new-world-1366x1000-2.jpeg" class="border-round-xl" width="100%" alt="">
         <span class="font-bold text-4xl mt-6">THESIS ASSISTANT</span>
@@ -52,13 +52,13 @@
         <span class="font-bold text-3xl mt-8">WHAT DOES THESIS ASSISTANT HAVE ?</span>
         <span class="mt-3 text-2xl"><span class="text-green-500 font-italic">Thesis Assistant</span> is currently created for my personal use. <br>It has a company's categories separate function for me to choose different types of companies that I want to learn about. It also has a memo function where you can add notes in the memo section when you find any interesting points about the information you are looking for. <br>I have also created a function that can brainstorm your ideas and plans into a "tree branches" system to help you organize your ideas better.</span>
 
-        <div class="h-30rem"></div>
+        <div class="h-10rem"></div>
     </div>
 </template>
 
 
 <style lang="scss" scoped>
     .container{
-        padding: 0 15rem;
+        padding: 0 13rem;
     }
 </style>

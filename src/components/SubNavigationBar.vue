@@ -1,6 +1,6 @@
 <script setup>
     import { useHomeStore } from "@/stores/homeview";
-    import SideBar from "@/components/HomeView/SideBarOfSubNavBar.vue";
+    import SideBar from "@/components/SideBarOfSubNavBar.vue";
     const store = useHomeStore();
 </script>
 

@@ -2,6 +2,7 @@
 import { RouterLink } from "vue-router";
 import { useHomeStore } from "@/stores/homeview";
 const store = useHomeStore();
+
 </script>
 
 <template>
@@ -35,7 +36,7 @@ const store = useHomeStore();
                                 </div>
                                 <ul class="list-none p-0 m-0 overflow-hidden">
                                     <li>
-                                        <RouterLink to = "/how" style="text-decoration: none; color: inherit;">
+                                        <RouterLink to = "/howdidicode" style="text-decoration: none; color: inherit;" @click="closeCallback"> 
                                             <a v-ripple class="flex align-items-center cursor-pointer p-3 border-round text-700 hover:surface-100 transition-duration-150 transition-colors p-ripple">
                                                 <i class="pi pi-spin pi-cog mr-2" style="font-size: 1rem"></i>
                                                 <span class="font-medium">How did I programed this ?</span>

@@ -20,11 +20,12 @@ const store = useHomeStore();
             <Button class="mt-4" severity="contrast">Go to Home Page <i class="pi pi-angle-right ml-2" style="font-size: 1rem"></i></Button>
         </RouterLink>
     </div>
+    <Footer />
 </template>
 
 <style lang="scss" scoped>
     .container{
-        margin-top: 10%;
+        margin-top: 5%;
         padding: 10rem;
     }
 </style>
