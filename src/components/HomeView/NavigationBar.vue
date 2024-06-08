@@ -12,7 +12,7 @@ const store = useHomeStore();
         <RouterLink to ="/home" style="text-decoration: none; color: inherit;">
             <div class="flex align-items-center gap-2">
                 <img src="https://cdn-icons-png.flaticon.com/128/9523/9523790.png" width="40px" alt="">
-                <span class="font-bold">THESIS ASSISTANT</span>
+                <span class="font-bold">THESIS ASSISTANT BRO</span>
             </div>
         </RouterLink>
         <IconField iconPosition="left">
