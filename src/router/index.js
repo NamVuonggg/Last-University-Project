@@ -2,6 +2,7 @@ import { createRouter, createWebHistory } from "vue-router";
 import HomeView from "../views/HomeView.vue";
 import LockView from "../views/LockView.vue";
 import HowDidICode from "../views/HowDidICode.vue";
+import TimeLine from "../views/TimeLine.vue";
 
 
 export const router = createRouter({
@@ -15,9 +16,13 @@ export const router = createRouter({
         name: "homeview",
         component: HomeView 
       },
-      { path: "/howdidicode",
+      { path: "/codeprocesses",
         name: "howdidicode",
         component: HowDidICode 
+      },
+      { path: "/timeline",
+        name: "timeline",
+        component: TimeLine 
       }
     ]
 });

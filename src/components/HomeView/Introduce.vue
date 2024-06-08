@@ -3,13 +3,16 @@
 
 <template>
     <div class="container mt-7 flex flex-column">
-        <div class="flex gap-3">
-            <Button class="w-9rem p-3 mb-4"> Quick Start <i class="pi pi-angle-right ml-2" style="font-size: 1rem"></i></Button>
-            <Button class="w-10rem p-3 mb-4 bg-orange-400 border-none"> Add a memo <i class="pi pi-angle-right ml-2" style="font-size: 1rem"></i></Button>
+        <div class="flex justify-content-between mb-4">
+            <div class="flex gap-3">
+                <Button class="w-9rem p-3 "> Quick Start <i class="pi pi-angle-right ml-2" style="font-size: 1rem"></i></Button>
+                <Button class="w-10rem p-3 bg-orange-400 border-none"> Add a memo <i class="pi pi-angle-right ml-2" style="font-size: 1rem"></i></Button>
+            </div>
+            <Button class="w-15rem p-3 bg-orange-400 border-none"><i class="pi pi-pen-to-square mr-5" style="font-size: 15px"></i>My memo lists</Button>
         </div>
         <img src="https://www.betterup.com/hubfs/Blog%20Images/new-world-1366x1000-2.jpeg" class="border-round-xl" width="100%" alt="">
         <span class="font-bold text-4xl mt-6">THESIS ASSISTANT</span>
-        <span class="mt-3 text-2xl"><span class="text-green-500 font-italic">Thesis Assistant</span> is an application created by me, <span class="text-green-500 font-italic">Vuong Hoai Nam</span>, a 4th-year student at Japan University of Economics. This entire project was conceptualized in about a week and took a month to develop.<br> I used <span class="text-green-500">VueJS3</span>, a JavaScript framework, to code this application. To make my thesis more impressive and to present all the information more clearly, I decided to create this application based on the questions I received from my teacher about how students create and plan their theses.</span>
+        <span class="mt-5 text-2xl"><span class="text-green-500 font-italic">Thesis Assistant</span> is an application created by me, <span class="text-green-500 font-italic">Vuong Hoai Nam</span>, a 4th-year student at Japan University of Economics. This entire project was conceptualized in about a week and took a month to develop.<br> I used <span class="text-green-500">VueJS3</span>, a JavaScript framework, to code this application. To make my thesis more impressive and to present all the information more clearly, I decided to create this application based on the questions I received from my teacher about how students create and plan their theses.</span>
         <Stepper class="my-8">
             <StepperPanel header="Forming ideas">
                 <template #content="{ nextCallback }">
@@ -50,7 +53,8 @@
             </StepperPanel>
         </Stepper>
         <span class="font-bold text-3xl mt-8">WHAT DOES THESIS ASSISTANT HAVE ?</span>
-        <span class="mt-3 text-2xl"><span class="text-green-500 font-italic">Thesis Assistant</span> is currently created for my personal use. <br>It has a company's categories separate function for me to choose different types of companies that I want to learn about. It also has a memo function where you can add notes in the memo section when you find any interesting points about the information you are looking for. <br>I have also created a function that can brainstorm your ideas and plans into a "tree branches" system to help you organize your ideas better.</span>
+        <span class="mt-5 text-2xl mb-5"><span class="text-green-500 font-italic">Thesis Assistant</span> is currently created for my personal use. <br>It has a company's categories separate function for me to choose different types of companies that I want to learn about. It also has a memo function where you can add notes in the memo section when you find any interesting points about the information you are looking for. <br>I have also created a function that can brainstorm your ideas and plans into a "tree branches" system to help you organize your ideas better.</span>
+        <img src="https://res.cloudinary.com/taskrabbit-com/image/upload/f_auto,q_auto/fyc9znhmrrplo0whckt7" class="border-round-xl" width="100%" alt="">
 
         <div class="h-10rem"></div>
     </div>

@@ -8,11 +8,11 @@ const store = useHomeStore();
 
 
 <template>
-    <div class="nav-container flex align-items-center justify-content-between px-5 py-3 gap-4">
+    <div class="nav-container flex align-items-center justify-content-between px-5 py-3 gap-4 bg-teal-200">
         <RouterLink to ="/home" style="text-decoration: none; color: inherit;">
             <div class="flex align-items-center gap-2">
-                <img src="https://cdn-icons-png.flaticon.com/128/9523/9523790.png" width="40px" alt="">
-                <span class="font-bold">THESIS ASSISTANT</span>
+                <img src="https://cdn-icons-png.flaticon.com/128/2997/2997291.png" width="40px" alt="">
+                <span class="font-bold ml-3">THESIS ASSISTANT</span>
             </div>
         </RouterLink>
         <IconField iconPosition="left">
@@ -21,7 +21,7 @@ const store = useHomeStore();
         </IconField>
         <div class="flex gap-2 align-items-center">
             <RouterLink to="/home" style="text-decoration: none; color: inherit;">
-                <i class="pi pi-home px-3" style="font-size: 22px; opacity: 0.3;"></i>
+                <i class="pi pi-home px-3" style="font-size: 22px; opacity: 0.6;"></i>
             </RouterLink>
             <RouterLink to="/" style="text-decoration: none; color: inherit;">
                 <div class="card flex justify-content-center">
@@ -38,4 +38,5 @@ const store = useHomeStore();
 
 
 <style lang="scss" scoped>
+
 </style>

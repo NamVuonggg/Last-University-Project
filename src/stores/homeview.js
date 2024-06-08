@@ -38,6 +38,7 @@ export const useHomeStore = defineStore('home', () =>{
   }
   const IncorrectPasswordMess = ref(false)
   const date = new Date();
+  const deadlineDate = ref();
 
 
     return { 
@@ -52,6 +53,7 @@ export const useHomeStore = defineStore('home', () =>{
       IncorrectPasswordMess,
       ActiveSpinner,
       checked,
-      date
+      date,
+      deadlineDate
     }
   })
