@@ -6,7 +6,7 @@
 
 
 <template>
-    <div class="card flex justify-content-between px-5 py-2">
+    <div class="card flex justify-content-between px-5 py-2 sub-navbar">
         <SideBar/>
         <Button icon="pi pi-bars" @click="store.visible = true" severity="secondary" text rounded aria-label="Bookmark"/>
         <div class="flex gap-4 align-items-center">
@@ -17,13 +17,15 @@
             <span>-</span>
             <div class="card flex justify-content-center align-items-center gap-2">
                 <span>Deadline:</span>
-                <Calendar v-model="store.deadlineDate" />
+                <Calendar v-model="store.deadlineDate" class="w-8rem"/>
             </div>
         </div>
     </div>
 </template>
 
 
-<style>
-
+<style lang="scss" scoped>
+    .sub-navbar{
+        border-bottom: 1px solid rgba(171, 167, 167, 0.58);
+    }
 </style>

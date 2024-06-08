@@ -8,12 +8,12 @@ import { RouterView } from 'vue-router';
   </div>
 </template>
 
-<style lang="scss" >
+<style lang="scss">
 body{
   margin: 0;
 }
 .container{
     width: 100%;
     margin: 0 auto;
-  }
+}
 </style>
