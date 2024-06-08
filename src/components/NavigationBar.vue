@@ -29,9 +29,6 @@ const store = useHomeStore();
                     offIcon="pi pi-lock-open" class="w-9rem" aria-label="Do you confirm" />
                 </div>
             </RouterLink>
-            <div class="card flex justify-content-center">
-                <Dropdown v-model="store.selectedCountries" :options="store.countries" placeholder="Select a Country" class="w-20rem" />
-            </div>
         </div>
     </div>
 </template>

@@ -6,7 +6,7 @@
     <NavBar/>
     <SubNavBar/>
     <div class="container mt-7 flex flex-column">
-        <span class="font-bold text-4xl mb-6">HOW DID I CREATE THESIS ASSISTANT ?</span>
+        <span class="font-bold text-4xl mb-6">HOW DID I CREATE <span class="text-green-500">THESIS ASSISTANT</span> ?</span>
         <Stepper class="my-8">
             <StepperPanel header="What is VueJS ?">
                 <template #content="{ nextCallback }">
@@ -68,18 +68,7 @@
         <span class="mt-5 text-xl">You can checkout this link to know more about Nodejs : <a href="https://nodejs.org/en" style = "text-decoration: none;">NodeJS</a></span>
 
         <span class="font-bold text-3xl mt-8">npm</span>
-        <span class="mt-3 text-2xl mt-4">npm is the world's largest software registry. Open source developers from every continent use npm to share and borrow packages, and many organizations use npm to manage private development as well.
-
-npm consists of three distinct components:
-
-the website
-the Command Line Interface (CLI)
-the registry
-Use the website to discover packages, set up profiles, and manage other aspects of your npm experience. For example, you can set up organizations to manage access to public or private packages.
-
-The CLI runs from a terminal, and is how most developers interact with npm.
-
-The registry is a large public database of JavaScript software and the meta-information surrounding it.</span>
+        <span class="mt-3 text-2xl mt-4">npm is the world's largest software registry. Open source developers from every continent use npm to share and borrow packages, and many organizations use npm to manage private development as well. npm consists of three distinct components: the website, the Command Line Interface (CLI), the registry, Use the website to discover packages, set up profiles, and manage other aspects of your npm experience. For example, you can set up organizations to manage access to public or private packages. The CLI runs from a terminal, and is how most developers interact with npm. The registry is a large public database of JavaScript software and the meta-information surrounding it.</span>
         <img src="https://kinsta.com/wp-content/uploads/2022/06/what-is-npm-1024x512.png" class="border-round-xl mt-5" width="100%" alt="">
         <span class="mt-5 text-xl">You can checkout this link to know more about npm : <a href="https://www.npmjs.com/" style = "text-decoration: none;">npm</a></span>
         
