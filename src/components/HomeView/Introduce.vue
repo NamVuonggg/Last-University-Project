@@ -10,7 +10,9 @@
                 </RouterLink>
                 <Button class="w-10rem p-3 bg-orange-400 border-none"> Add a memo <i class="pi pi-angle-right ml-2" style="font-size: 1rem"></i></Button>
             </div>
-            <Button class="w-15rem p-3 bg-orange-400 border-none"><i class="pi pi-pen-to-square mr-5" style="font-size: 15px"></i>My memo lists</Button>
+            <RouterLink to = "/topics/notes">
+                <Button class="w-15rem p-3 bg-orange-400 border-none"><i class="pi pi-pen-to-square mr-5" style="font-size: 15px"></i>My memo lists</Button>
+            </RouterLink>
         </div>
 
         <div class="card p-7 shadow-4 border-round-3xl flex flex-column">
