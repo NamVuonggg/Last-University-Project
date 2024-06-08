@@ -8,6 +8,10 @@ import { createApp } from "vue";
 import App from "./App.vue";
 import { router } from "./router";
 import { createPinia } from 'pinia'
+
+import NavigationBar from "./components/HomeView/NavigationBar.vue";
+import SubNavigationBar from "./components/HomeView/SubNavigationBar.vue";
+
 const pinia = createPinia()
 
 
@@ -235,5 +239,7 @@ app.component('TreeTable', TreeTable);
 app.component('TriStateCheckbox', TriStateCheckbox);
 app.component('VirtualScroller', VirtualScroller);
 
+app.component('SubNavBar', SubNavigationBar);
+app.component('NavBar', NavigationBar);
 app.use(pinia);
 app.mount("#app");

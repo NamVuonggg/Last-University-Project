@@ -2,7 +2,7 @@
 </script>
 
 <template>
-    <div class="container mt-7 px-8 flex flex-column">
+    <div class="container mt-7 flex flex-column">
         <div class="flex gap-3">
             <Button class="w-9rem p-3 mb-4"> Quick Start <i class="pi pi-angle-right ml-2" style="font-size: 1rem"></i></Button>
             <Button class="w-10rem p-3 mb-4 bg-yellow-400 border-none"> Add a memo <i class="pi pi-angle-right ml-2" style="font-size: 1rem"></i></Button>
@@ -57,6 +57,8 @@
 </template>
 
 
-<style>
-
+<style lang="scss" scoped>
+    .container{
+        padding: 0 15rem;
+    }
 </style>
