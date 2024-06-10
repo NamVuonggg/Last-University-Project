@@ -1,26 +1,23 @@
 <script setup>
+import IntroduceButtons from "./IntroduceButtons.vue"
 </script>
 
 <template>
     <div class="container mt-7 flex flex-column">
-        <div class="flex justify-content-between">
-            <div class="flex gap-3">
-                <RouterLink to="/topics" style="text-decoration: none; color: inherit;">
-                    <Button class="w-9rem p-3 bg-gray-900 border-none hover:bg-red-500"> Quick Start <i class="pi pi-angle-right ml-2" style="font-size: 1rem"></i></Button>
-                </RouterLink>
-                <Button class="w-10rem p-3 bg-orange-400 border-none hover:bg-red-500"> Add a memo <i class="pi pi-angle-right ml-2" style="font-size: 1rem"></i></Button>
-            </div>
-            <RouterLink to = "/topics/notes">
-                <Button class="w-15rem p-3 bg-orange-400 border-none hover:bg-red-500"><i class="pi pi-pen-to-square mr-5" style="font-size: 15px"></i>My memo lists</Button>
-            </RouterLink>
-        </div>
+
 
         <div class="h-3rem"></div>
 
-        <div class="card p-7 shadow-4 border-round-3xl flex flex-column">
-            <img src="https://www.betterup.com/hubfs/Blog%20Images/new-world-1366x1000-2.jpeg" class="border-round-xl m-auto" width="100%" alt="">
-            <span class="font-bold text-5xl mt-6">THESIS ASSISTANT</span>
-            <span class="mt-5 text-2xl"><span class="text-red-500 font-italic">Thesis Assistant</span> is an application created by me, <span class="text-red-500 font-italic">Vuong Hoai Nam</span>, a 4th-year student at Japan University of Economics. <br><br>This entire project was conceptualized in about a week and took a month to develop.<br> I used <span class="text-red-500">VueJS3</span>, a JavaScript framework, to code this application. To make my thesis more impressive and to present all the information more clearly, I decided to create this application based on the questions I received from my teacher about how students create and plan their theses.</span>
+        <div class="card p-5 shadow-4 border-round-3xl grid">
+            <div class="col-12 md:col-6 xl:col-6 flex flex-column gap-5">
+                <span class="font-bold text-5xl mt-6">THESIS ASSISTANT</span>
+                <span class="mt-5 text-2xl"><span class="text-red-500 font-italic">Thesis Assistant</span> is an application created by me, <span class="text-red-500 font-italic">Vuong Hoai Nam</span>, a 4th-year student at Japan University of Economics. </span>
+                <IntroduceButtons/>
+            </div>
+            <div class="col-12 md:col-6 xl:col-6">
+                <img src="https://www.betterup.com/hubfs/Blog%20Images/new-world-1366x1000-2.jpeg" class="border-round-xl m-auto" width="100%" alt="">
+            </div>
+
         </div>
 
         <div class="h-6rem"></div>
@@ -101,6 +98,6 @@
 
 <style lang="scss" scoped>
     .container{
-        padding: 0 15%;
+        padding: 0 10%;
     }
 </style>

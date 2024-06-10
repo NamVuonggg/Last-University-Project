@@ -40,3 +40,4 @@ const store = useNoteStore();
         padding: 0 15%;
     }
 </style>
+
