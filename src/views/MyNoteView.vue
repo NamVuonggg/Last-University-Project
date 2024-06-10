@@ -10,7 +10,6 @@ const store = useNoteStore();
 
     <div class="h-8rem"></div>
 
-    <AddNoteModal v-if="store.modalIsActive"/>
 
     <div class="container">
         <Button @click="store.activeNoteModal" class="mb-5">+ Add task</Button>
@@ -29,6 +28,8 @@ const store = useNoteStore();
             </div>
         </div>
     </div>
+
+    <AddNoteModal v-if="store.modalIsActive"/>
 
     <div class="h-20rem"></div>
 

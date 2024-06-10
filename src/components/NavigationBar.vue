@@ -8,11 +8,11 @@ const store = useHomeStore();
 
 
 <template>
-    <div class="nav-container flex align-items-center justify-content-between px-5 py-3 gap-4 bg-gray-900">
+    <div class="nav-container flex align-items-center justify-content-between px-5 py-3 gap-4">
         <RouterLink to ="/home" style="text-decoration: none; color: inherit;">
             <div class="flex align-items-center gap-2">
                 <img src="https://cdn-icons-png.flaticon.com/128/2997/2997291.png" width="40px" alt="">
-                <span class="font-bold ml-3 text-blue-50">THESIS ASSISTANT</span>
+                <span class="font-bold ml-3 text-gray-900">THESIS <br> ASSISTANT</span>
             </div>
         </RouterLink>
         <IconField iconPosition="left">

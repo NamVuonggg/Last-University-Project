@@ -8,7 +8,14 @@
 <template>
     <div class="card flex justify-content-between px-5 py-2 sub-navbar">
         <SideBar/>
-        <Button icon="pi pi-bars" @click="store.visible = true" severity="secondary" text rounded aria-label="Bookmark"/>
+        <div class="flex align-items-center gap-7">
+            <Button icon="pi pi-bars" @click="store.visible = true" severity="secondary" text rounded aria-label="Bookmark"/>
+            <span class="cursor-pointer hover:bg-gray-100 p-3 border-round-md">Memo</span>
+            <span class="cursor-pointer hover:bg-gray-100 p-3 border-round-md">Contact</span>
+            <span class="cursor-pointer hover:bg-gray-100 p-3 border-round-md">About</span>
+
+
+        </div>
         <div class="flex gap-4 align-items-center">
             <div class="card flex justify-content-center align-items-center gap-2">
                 <span>Today:</span>
