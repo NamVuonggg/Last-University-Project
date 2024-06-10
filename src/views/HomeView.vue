@@ -10,4 +10,5 @@ import Introduce from "@/components/HomeView/Introduce.vue"
 </template>
 
 <style lang="scss" scoped>
+
 </style>

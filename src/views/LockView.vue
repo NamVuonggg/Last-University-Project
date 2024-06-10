@@ -4,7 +4,6 @@ const store = useHomeStore();
 </script>
 
 <template>
-    <div class="h-10rem"></div>
     <div class="flex flex-column justify-content-center align-items-center container">
         <span>Enter Password</span>
         <div class="card flex justify-content-center mt-3">
@@ -21,13 +20,11 @@ const store = useHomeStore();
     </div>
 
     <div class="h-30rem"></div>
-
-    <Footer />
 </template>
 
 <style lang="scss" scoped>
     .container{
-        margin-top: 5%;
+        margin-top: 15%;
         padding: 10rem;
     }
 </style>

@@ -39,7 +39,14 @@ export const useNoteStore = defineStore('note', () =>{
     ]);
     const checked = ref(false);
 
-    
+    const modalIsActive = ref(false);
+    const activeNoteModal = () =>{
+        modalIsActive.value = true
+    }
+    const closeModal = () =>{
+        modalIsActive.value = false
+    }
+
     const noteTitle = ref();
     const noteContent = ref();
     const textEmptyError = ref(false)
@@ -51,16 +58,31 @@ export const useNoteStore = defineStore('note', () =>{
                 title: noteTitle.value,
                 content: noteContent.value,
                 date: new Date().toLocaleDateString(),
-                important: false
+                important: false,
+
             });
         }else{
             textEmptyError.value = true;
             setTimeout(function(){
                 textEmptyError.value = false;
             },2600)
-        }
+        };
+        noteTitle.value = ("");
+        noteContent.value = ("");
+        closeModal();
     }
 
 
-    return { noteTitle, noteContent, notes, noteTitle, noteContent, addNote, textEmptyError, checked };
+    return { 
+        noteTitle, 
+        noteContent, 
+        notes, 
+        noteTitle, 
+        noteContent, 
+        addNote, 
+        textEmptyError, 
+        checked, 
+        modalIsActive, 
+        activeNoteModal, 
+        closeModal };
 })

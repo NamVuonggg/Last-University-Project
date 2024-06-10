@@ -10,12 +10,13 @@ const store = useNoteStore();
 
     <div class="h-8rem"></div>
 
-    <AddNoteModal/>
+    <AddNoteModal v-if="store.modalIsActive"/>
 
     <div class="container">
+        <Button @click="store.activeNoteModal" class="mb-5">+ Add task</Button>
         <div class="grid">
             <div class="col-12 md:col-6 xl:col-4" v-for="note in store.notes" :key="note.id">
-                <div class="card-container p-6 bg-yellow-300 w-full border-round-xl flex flex-column gap-6">
+                <div class="p-6 bg-yellow-300 w-full border-round-xl flex flex-column gap-6">
                     <div class="upper-content">
                         <div class="title mb-3 text-xl font-bold">{{ note.title }}</div>
                         <div class="content">{{ note.content }}</div>
@@ -36,6 +37,6 @@ const store = useNoteStore();
 
 <style lang="scss" scoped>
     .container{
-        padding: 0 13rem;
+        padding: 0 15%;
     }
 </style>

@@ -12,14 +12,14 @@
 
         <div class="card p-7 shadow-4 border-round-3xl flex flex-column">
             <Stepper class="py-5">
-                <StepperPanel header="What is VueJS ?">
+                <StepperPanel header="What is VUEJS ?">
                     <template #content="{ nextCallback }">
                         <div class="flex flex-column h-12rem">
-                            <div class="flex-auto flex justify-content-center align-items-left font-medium">
+                            <div class="flex-auto flex justify-content-center align-items-center font-medium">
                                 <span class="mt-3 text-2xl mt-5">Vue (pronounced /vjuː/, like view) is a JavaScript framework for building user interfaces. It builds on top of standard HTML, CSS, and JavaScript and provides a declarative, component-based programming model that helps you efficiently develop user interfaces of any complexity.</span>
                             </div>
                         </div>
-                        <div class="flex p-4 justify-content-end">
+                        <div class="flex pt-4">
                             <Button label="Next" icon="pi pi-arrow-right" iconPos="right" @click="nextCallback" />
                         </div>
                     </template>
@@ -113,6 +113,6 @@
 
 <style lang="scss" scoped>
     .container{
-        padding: 0 13rem;
+        padding: 0 15%;
     }
 </style>
