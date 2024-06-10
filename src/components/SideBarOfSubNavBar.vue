@@ -108,10 +108,12 @@ const store = useHomeStore();
                                         </ul>
                                     </li>
                                     <li>
-                                        <a v-ripple class="flex align-items-center cursor-pointer p-3 border-round text-700 hover:surface-100 transition-duration-150 transition-colors p-ripple">
-                                            <i class="pi pi-users mr-2"></i>
-                                            <span class="font-medium">Team</span>
-                                        </a>
+                                        <RouterLink to = "topics/notes" style="text-decoration: none; color: inherit;" @click="closeCallback">
+                                            <a v-ripple class="flex align-items-center cursor-pointer p-3 border-round text-700 hover:surface-100 transition-duration-150 transition-colors p-ripple">
+                                                <i class="pi pi-pen-to-square mr-2"></i>
+                                                <span class="font-medium">Notes</span>
+                                            </a>
+                                        </RouterLink>
                                     </li>
                                     <li>
                                         <a v-ripple class="flex align-items-center cursor-pointer p-3 border-round text-700 hover:surface-100 transition-duration-150 transition-colors p-ripple">

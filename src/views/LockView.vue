@@ -1,11 +1,10 @@
 <script setup>
 import { useHomeStore } from '@/stores/homeview';
-import { RouterLink } from 'vue-router';
-import InputOtp from 'primevue/inputotp';
 const store = useHomeStore();
 </script>
 
 <template>
+    <div class="h-10rem"></div>
     <div class="flex flex-column justify-content-center align-items-center container">
         <span>Enter Password</span>
         <div class="card flex justify-content-center mt-3">
@@ -20,6 +19,9 @@ const store = useHomeStore();
             <Button class="mt-4" severity="contrast">Go to Home Page <i class="pi pi-angle-right ml-2" style="font-size: 1rem"></i></Button>
         </RouterLink>
     </div>
+
+    <div class="h-30rem"></div>
+
     <Footer />
 </template>
 
