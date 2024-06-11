@@ -1,42 +1,7 @@
 import { defineStore } from 'pinia'
 import { ref, reactive } from 'vue'
 export const useNoteStore = defineStore('note', () =>{
-    const notes = reactive([
-        {
-            id: 1,
-            title: "Toyota",
-            content: "Toyota is one of the biggest companies in Japan as adwd adawd adasd awd adawd adawd awd",
-            date: "9/6/2024",
-            important: false
-        },
-        {
-            id: 2,
-            title: "Toyota",
-            content: "Toyota is one of the biggest companies in Japan as adwd adawd adasd awd adawd adawd awd",
-            date: "10/6/2024",
-            important: false
-        },
-        {
-            id: 3,
-            title: "Toyota",
-            content: "Toyota is one of the biggest companies in Japan as adwd adawd adasd awd adawd adawd awd",
-            date: "11/6/2024",
-            important: false
-        },
-        {
-            id: 4,
-            title: "Toyota",
-            content: "Toyota is one of the biggest companies in Japan as adwd adawd adasd awd adawd adawd awd",
-            date: "12/6/2024",
-            important: false
-        },{
-            id: 5,
-            title: "Toyota",
-            content: "Toyota is one of the biggest companies in Japan as adwd adawd adasd awd adawd adawd awd",
-            date: "13/6/2024",
-            important: false
-        }
-    ]);
+    const notes = reactive([]);
     const checked = ref(false);
 
     const modalIsActive = ref(false);
@@ -59,8 +24,8 @@ export const useNoteStore = defineStore('note', () =>{
                 content: noteContent.value,
                 date: new Date().toLocaleDateString(),
                 important: false,
-
             });
+            closeModal();
         }else{
             textEmptyError.value = true;
             setTimeout(function(){
@@ -69,9 +34,14 @@ export const useNoteStore = defineStore('note', () =>{
         };
         noteTitle.value = ("");
         noteContent.value = ("");
-        closeModal();
     }
 
+    const deleteNote = (noteId) =>{
+        const index = notes.findIndex(note => note.id === noteId );
+        if(index !== -1){
+            notes.splice(index, 1);
+        }
+    }
 
     return { 
         noteTitle, 
@@ -84,5 +54,7 @@ export const useNoteStore = defineStore('note', () =>{
         checked, 
         modalIsActive, 
         activeNoteModal, 
-        closeModal };
+        closeModal,
+        deleteNote
+     };
 })

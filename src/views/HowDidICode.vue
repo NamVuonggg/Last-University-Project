@@ -57,7 +57,7 @@
         <div class="card p-7 shadow-4 border-round-3xl flex flex-column">
             <span class="mt-3 text-2xl mb-5"><span class="text-green-500 font-italic">Thesis Assistant</span> is an application which I used VUEJS3 to created. Check the information below to know more about Vue and libraries</span>
             <img src="https://inspector.dev/wp-content/uploads/2023/03/custom-tooltip-directive-vuejs-3-cover.png" class="border-round-xl" width="100%" alt="">
-            <span class="mt-5 text-xl">You can checkout this link to know more about VUE : <a href="https://vuejs.org" style = "text-decoration: none;">Vue</a></span>
+            <span class="mt-5 text-xl">You can checkout this link to know more about VUE : <a href="https://vuejs.org" target="_blank" style = "text-decoration: none;">Vue</a></span>
         </div>
 
         <div class="h-6rem"></div>
@@ -66,7 +66,7 @@
             <span class="font-bold text-3xl">WE DO ALSO NEED NODEJS ENVIRONMENT AND NPM TO RUN VUEJS</span>
             <span class="mt-5 text-2xl">As an asynchronous event-driven JavaScript runtime, Node.js is designed to build scalable network applications. In the following "hello world" example, many connections can be handled concurrently. Upon each connection, the callback is fired, but if there is no work to be done, Node.js will sleep.</span>
             <img src="https://media.licdn.com/dms/image/D4E12AQHssxaPQCrpiw/article-cover_image-shrink_600_2000/0/1694174583046?e=2147483647&v=beta&t=ZRtjqS1T6Ir9V9C6RiWrMbt_A--z5G1pfhOvpj_conE" class="border-round-xl mt-5" width="100%" alt="">
-            <span class="mt-5 text-xl">You can checkout this link to know more about Nodejs : <a href="https://nodejs.org/en" style = "text-decoration: none;">NodeJS</a></span>
+            <span class="mt-5 text-xl">You can checkout this link to know more about Nodejs : <a href="https://nodejs.org/en" target="_blank" style = "text-decoration: none;">NodeJS</a></span>
         </div>
 
         <div class="h-6rem"></div>
@@ -75,7 +75,7 @@
             <span class="font-bold text-3xl">npm</span>
             <span class="mt-3 text-2xl mt-4">npm is the world's largest software registry. Open source developers from every continent use npm to share and borrow packages, and many organizations use npm to manage private development as well. npm consists of three distinct components: the website, the Command Line Interface (CLI), the registry, Use the website to discover packages, set up profiles, and manage other aspects of your npm experience.</span>
             <img src="https://kinsta.com/wp-content/uploads/2022/06/what-is-npm-1024x512.png" class="border-round-xl mt-5" width="100%" alt="">
-            <span class="mt-5 text-xl">You can checkout this link to know more about npm : <a href="https://www.npmjs.com/" style = "text-decoration: none;">npm</a></span>
+            <span class="mt-5 text-xl">You can checkout this link to know more about npm : <a href="https://www.npmjs.com/" target="_blank" style = "text-decoration: none;">npm</a></span>
         </div>
 
         <div class="h-6rem"></div>
@@ -84,7 +84,7 @@
             <span class="font-bold text-3xl">WHAT IS PRIMEVUE ?</span>
             <span class="mt-3 text-2xl">PrimeVue is a complete UI suite for Vue. js consisting of a rich set of UI components, icons, blocks, and application templates.</span>
             <img src="https://media.dev.to/cdn-cgi/image/width=1600,height=900,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fi%2Ff8doki4dl435thlf5fza.jpg" class="border-round-xl mt-5" width="100%" alt="">
-            <span class="mt-5 text-xl">You can checkout this link to know more about what Primvue can do with it's power : <a href="https://primevue.org/" style = "text-decoration: none;">Primevue</a></span>
+            <span class="mt-5 text-xl">You can checkout this link to know more about what Primvue can do with it's power : <a href="https://primevue.org/" target="_blank" style = "text-decoration: none;">Primevue</a></span>
         </div>
 
         <div class="h-6rem"></div>
@@ -93,7 +93,7 @@
             <span class="font-bold text-3xl">WHAT IS PRIMEFLEX ?</span>
             <span class="mt-3 text-2xl">PrimeFlex is a lightweight responsive CSS utility library to accompany Prime UI libraries and static webpages as well.</span>
             <img src="https://www.primefaces.org/static/social/primeflex-preview.jpg" class="border-round-xl mt-5" width="100%" alt="">
-            <span class="mt-5 text-xl">You can checkout this link to know more about what PrimFlex can do with it's power : <a href="https://primeflex.org/" style = "text-decoration: none;">PrimeFlex</a></span>
+            <span class="mt-5 text-xl">You can checkout this link to know more about what PrimFlex can do with it's power : <a href="https://primeflex.org/" target="_blank" style = "text-decoration: none;">PrimeFlex</a></span>
         </div>
 
         <div class="h-6rem"></div>
@@ -102,9 +102,9 @@
             <span class="font-bold text-3xl">SOME DIFFERENT IMPORTANT LIBRARIES</span>
             <span class="mt-3 text-2xl">This project was also used Vue-Router and Pinia for linking and Stroring purposes, all the datas from different components are stored into stores files to manage and control it easier. </span>
             <img src="https://codezine.jp/static/images/article/18727/og.png" class="border-round-xl mt-5" width="100%" alt="">
-            <span class="mt-5 text-xl">You can checkout this link to know more about what Pinia can do with it's power : <a href="https://pinia.vuejs.org/" style = "text-decoration: none;">Pinia</a></span>
+            <span class="mt-5 text-xl">You can checkout this link to know more about what Pinia can do with it's power : <a href="https://pinia.vuejs.org/" target="_blank" style = "text-decoration: none;">Pinia</a></span>
         </div>
-
+        <ScrollTop />
         <div class="h-10rem"></div>
     </div>
     <Footer />

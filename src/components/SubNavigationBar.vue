@@ -6,13 +6,12 @@
 
 
 <template>
-    <div class="card flex justify-content-between px-5 py-2 sub-navbar">
+    <div class="card flex justify-content-between px-5 py-3 sub-navbar">
         <SideBar/>
         <div class="flex align-items-center gap-7">
             <Button icon="pi pi-bars" @click="store.visible = true" severity="secondary" text rounded aria-label="Bookmark"/>
-            <span class="cursor-pointer hover:bg-gray-100 p-3 border-round-md">Memo</span>
-            <span class="cursor-pointer hover:bg-gray-100 p-3 border-round-md">Contact</span>
-            <span class="cursor-pointer hover:bg-gray-100 p-3 border-round-md">About</span>
+            <span class="cursor-pointer hover:bg-gray-100 p-3 border-round-md">Fuctions</span>
+            <span class="cursor-pointer hover:bg-gray-100 p-3 border-round-md">Contact me</span>
 
 
         </div>

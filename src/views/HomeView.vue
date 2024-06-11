@@ -6,6 +6,7 @@ import Introduce from "@/components/HomeView/Introduce.vue"
     <NavBar/>
     <SubNavBar/>
     <Introduce/>
+    <ScrollTop />
     <Footer />
 </template>
 

@@ -24,7 +24,7 @@ const store = useHomeStore();
 
 <style lang="scss" scoped>
     .container{
-        margin-top: 15%;
+        margin-top: 5%;
         padding: 10rem;
     }
 </style>

@@ -9,13 +9,13 @@ const store = useNoteStore();
     <div class="newnote-modal">
         <div class="bg-blue-50 flex flex-column card border-round-xl p-6 w-30rem m-auto">
             <div class="flex align-items-center justify-content-between mb-4">
-                <span class="font-bold text-xl">Add new note</span>
+                <span class="font-bold text-2xl">Add new note</span>
                 <div class="text-right cursor-pointer" @click="store.closeModal"><i class="pi pi-times" style="color: black"></i></div>
             </div>
             <span class="text-red-500 mb-3 text-center" v-if="store.textEmptyError">Fill all the blanks below before adding</span>
             <label for="title" class="mb-1">Title</label>
             <InputText type="text" v-model="store.noteTitle" />
-            <label class="mt-4 mb-1" for="content">Content</label>
+            <label class="mt-3 mb-1" for="content">Content</label>
             <Textarea v-model="store.noteContent" rows="5" cols="30"/>
             <Button class="mt-5 p-3" label="Add Note" severity="warning" @click="store.addNote"></Button>
         </div>
