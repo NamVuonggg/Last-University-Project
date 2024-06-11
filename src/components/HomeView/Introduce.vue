@@ -10,7 +10,7 @@ const store = useNoteStore();
 
 
         <div class="top-content">
-            <div class="border-round-3xl grid p-8">
+            <div class="border-round-3xl grid intro-thesis">
                 <div class="col-12 md:col-4 xl:col-4 flex flex-column gap-4">
                     <span class="font-bold text-5xl mt-6 text-blue-50">THESIS ASSISTANT</span>
                     <span class="mt-5 text-2xl"><span class="text-blue-50">Thesis Assistant</span> is an application created by me, <span class="font-italic">Vuong Hoai Nam</span>, a 4th-year student at Japan University of Economics. </span>
@@ -31,7 +31,7 @@ const store = useNoteStore();
 
 
         <div class="second-content">
-            <div class="border-round-3xl flex gap-7 p-8">
+            <div class="border-round-3xl flex gap-7 thesis-have">
                 <div class="flex flex-column gap-4">
                     <div>
                         <img src="https://www.mediahawk.co.uk/wp-content/uploads/2021/04/education-sector-group-call-tracking.jpg" class="border-round-xl m-auto" width="100%" alt="">
@@ -54,8 +54,6 @@ const store = useNoteStore();
                 </div>
             </div>
         </div>
-
-    <div class="container flex flex-column">
         <!-- NOTE MAIN VIEW SECTION -->
         <div class="h-2rem"></div>
         <p class="text-center text-3xl font-bold mb-6" v-if="store.notes.length">QUICK VIEW NOTES</p>
@@ -63,6 +61,7 @@ const store = useNoteStore();
 
         <div class="h-5rem"></div>
 
+        <!-- You can also learn -->
         <div class="border-round-3xl flex flex-column gap-2">
             <div>
                 <img src="https://149357281.v2.pressablecdn.com/wp-content/uploads/2017/06/iStock-507753272-e1497891667823.jpg" class="border-round-xl m-auto" width="100%" alt="">
@@ -74,7 +73,7 @@ const store = useNoteStore();
         </div>
         
         <div class="h-6rem"></div>
-
+        <!-- extremely friendly UI -->
         <div class="card p-7 shadow-4 border-round-3xl flex flex-column">
             <img src="../../assets/images/Screenshot 2024-06-10 185658.png" class="border-round-xl m-auto" width="100%" alt="">
             <span class="font-bold text-5xl mt-6">EXTREMELY FRIENDLY UI</span>
@@ -84,23 +83,30 @@ const store = useNoteStore();
 
         <div class="h-8rem"></div>
 
-    </div>
 </template>
 
 
 <style lang="scss" scoped>
 
+    .top-content{
+        background: url("https://i.pinimg.com/originals/7d/b1/8c/7db18c78e980806566465b5b8bf034c0.jpg");
+        background-size: cover;
+
+        .intro-thesis{
+            padding: 5rem 15%;
+        }
+    }
+
+    .second-content{
+        background: url("https://images.pexels.com/photos/7130475/pexels-photo-7130475.jpeg?cs=srgb&dl=pexels-codioful-7130475.jpg&fm=jpg");
+        background-size: cover;
+
+        .thesis-have{
+            padding: 5rem 15%;
+        }
+    }
     .container{
         padding: 0 10%;
 
-        .top-content{
-            background: url("https://i.pinimg.com/originals/7d/b1/8c/7db18c78e980806566465b5b8bf034c0.jpg");
-            background-size: cover;
-        }
-
-        .second-content{
-            background: url("https://images.pexels.com/photos/7130475/pexels-photo-7130475.jpeg?cs=srgb&dl=pexels-codioful-7130475.jpg&fm=jpg");
-            background-size: cover;
-        }
     }
 </style>

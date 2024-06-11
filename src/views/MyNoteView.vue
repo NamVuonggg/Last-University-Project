@@ -18,8 +18,6 @@ const store = useNoteStore();
     <AddNoteModal v-if="store.modalIsActive"/>
 
     <div class="h-20rem"></div>
-
-    <Footer />
 </template>
 
 <style lang="scss" scoped>
