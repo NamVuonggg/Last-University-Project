@@ -4,8 +4,7 @@
 <template>
     <NavBar/>
     <SubNavBar/>
-    <div class="background">
-        <div class="container" style="padding: 15rem;">
+        <div class="container">
             <div class="grid h-full m-auto align-items-center">
                 <div class="col-12 md:col-6 xl:col-4">
                     <Button class="p-4 w-full border-round-xl flex justify-content-between bg-green-600 hover:bg-green-500 border-none">
@@ -65,17 +64,11 @@
                 </div>
             </div>
         </div>
-    </div>
-    <Footer />
 </template>
 
-<style scoped>
-
-.background{
-    background: url('https://i.pinimg.com/originals/fa/c0/5c/fac05c110c458e9bab3a3248bfb3c376.jpg');
-    background-size: cover;
+<style lang="scss" scoped>
     .container {
-        padding: 0 15%;
+        padding: 10% 15%;
     }
-}
+
 </style>
