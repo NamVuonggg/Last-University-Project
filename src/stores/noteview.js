@@ -1,8 +1,7 @@
 import { defineStore } from 'pinia'
-import { ref, reactive } from 'vue'
+import { ref, reactive, computed } from 'vue'
 export const useNoteStore = defineStore('note', () =>{
     const notes = reactive([]);
-    const checked = ref(false);
 
     const modalIsActive = ref(false);
     const activeNoteModal = () =>{
@@ -43,6 +42,17 @@ export const useNoteStore = defineStore('note', () =>{
         }
     }
 
+    const updateImportant = (noteId, importantStatus) =>{
+        const index = notes.findIndex(note => note.id === noteId);
+        if(index !== -1){
+            notes[index].important = importantStatus;
+        }
+    }
+
+    const importantNotes = computed(() =>{
+        return notes.filter(note => note.important);
+    })
+
     return { 
         noteTitle, 
         noteContent, 
@@ -51,10 +61,11 @@ export const useNoteStore = defineStore('note', () =>{
         noteContent, 
         addNote, 
         textEmptyError, 
-        checked, 
         modalIsActive, 
         activeNoteModal, 
         closeModal,
-        deleteNote
+        deleteNote,
+        updateImportant,
+        importantNotes
      };
 })

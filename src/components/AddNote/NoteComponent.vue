@@ -1,12 +1,21 @@
 <script setup>
+import { computed, defineProps } from 'vue';
 import { useNoteStore } from '@/stores/noteview';
 const store = useNoteStore();
+
+const props = defineProps({
+    showImportant: Boolean
+})
+
+const notesToShow = computed(() =>{
+    return props.showImportant ? store.importantNotes : store.notes
+});
 </script>
 
 <template>
-    <p class="text-center mt-5 m-auto" v-if="!store.notes.length" style="opacity: 0.3; font-size: 20px;">There is no note availale yet !</p>
+        <p class="text-center mt-8 m-auto" v-if="!notesToShow.length" style="opacity: 0.3; font-size: 20px;">There is no note availale yet !</p>
         <div class="grid">
-            <div class="col-12 md:col-6 xl:col-4" v-for="note in store.notes" :key="note.id">
+            <div class="col-12 md:col-6 xl:col-4" v-for="note in notesToShow" :key="note.id">
                 <div class="p-6 bg-yellow-300 w-full border-round-xl flex flex-column gap-6">
                     <div class="upper-content">
                         <div class="flex justify-content-between">
@@ -17,7 +26,10 @@ const store = useNoteStore();
                     </div>
                     <div class="flex align-items-center justify-content-between">
                         <div class="lower-content">{{ note.date }}</div>
-                        <InputSwitch v-model="store.checked"/>
+                        <div class="flex gap-3 align-items-center">
+                            <p>Important Note</p>
+                            <InputSwitch v-model="note.important" @update:checked = "store.updateImportant(note.id, $event)"/>
+                        </div>
                     </div>
                 </div>
             </div>

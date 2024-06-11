@@ -1,8 +1,11 @@
 <script setup>
+import { ref } from "vue";
 import AddNoteModal from "@/components/AddNote/AddNoteModal.vue"
 import NoteComponent from "@/components/AddNote/NoteComponent.vue"
 import { useNoteStore } from '@/stores/noteview';
 const store = useNoteStore();
+
+const showImportant = ref(false);
 </script>
 
 <template>
@@ -11,8 +14,11 @@ const store = useNoteStore();
 
     <div class="h-5rem"></div>
     <div class="container">
-        <Button @click="store.activeNoteModal" class="mb-5">+ Add task</Button>
-        <NoteComponent />
+        <div class="flex align-items-center gap-3">
+            <Button @click="store.activeNoteModal" class="mb-5">+ Add task</Button>
+            <Button @click="showImportant = !showImportant" class="mb-5 bg-red-500 border-none hover:bg-red-700">{{ showImportant ? 'Show All Notes' : 'Show Important Notes' }}</Button>
+        </div>
+        <NoteComponent :showImportant = "showImportant"/>
     </div>
 
     <AddNoteModal v-if="store.modalIsActive"/>
