@@ -16,7 +16,7 @@ const notesToShow = computed(() =>{
         <p class="text-center mt-8 m-auto" v-if="!notesToShow.length" style="opacity: 0.3; font-size: 20px;">There is no note availale yet !</p>
         <div class="grid">
             <div class="col-12 md:col-6 xl:col-4" v-for="note in notesToShow" :key="note.id">
-                <div class="p-6 bg-yellow-300 w-full border-round-xl flex flex-column gap-6">
+                <div class="p-4 bg-yellow-300 w-full border-round-xl flex flex-column gap-6">
                     <div class="upper-content">
                         <div class="flex justify-content-between">
                             <div class="title mb-3 text-xl font-bold">{{ note.title }}</div>
@@ -25,9 +25,9 @@ const notesToShow = computed(() =>{
                         <div class="content mt-5">{{ note.content }}</div>
                     </div>
                     <div class="flex align-items-center justify-content-between">
-                        <div class="lower-content">{{ note.date }}</div>
-                        <div class="flex gap-3 align-items-center">
-                            <p>Important Note</p>
+                        <div class="lower-content text-xs">{{ note.date }}</div>
+                        <div class="flex gap-2 align-items-center">
+                            <p class="text-xs">Important</p>
                             <InputSwitch v-model="note.important" @update:checked = "store.updateImportant(note.id, $event)"/>
                         </div>
                     </div>

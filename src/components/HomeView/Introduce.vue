@@ -31,7 +31,7 @@ const store = useNoteStore();
 
 
         <div class="second-content">
-            <div class="border-round-3xl grid gap-8 thesis-have">
+            <div class="border-round-3xl grid gap-6 thesis-have">
                 <div class="col-12 md:col-7 xl:col-7 flex flex-column gap-4">
                     <div>
                         <img src="https://www.mediahawk.co.uk/wp-content/uploads/2021/04/education-sector-group-call-tracking.jpg" class="border-round-xl m-auto" width="100%" alt="">
@@ -62,14 +62,14 @@ const store = useNoteStore();
 
         <!-- You can also learn -->
         <div class="you-also">
-            <div class="border-round-3xl flex gap-8">
+            <div class="border-round-3xl flex align-items-center gap-8">
                     <div>
                         <img src="https://149357281.v2.pressablecdn.com/wp-content/uploads/2017/06/iStock-507753272-e1497891667823.jpg" class="border-round-xl m-auto" width="100%" alt="">
                     </div>
                     <div class="flex flex-column gap-8">
                         <div class="flex flex-column gap-5">
                             <span class="font-bold text-5xl mt-6">YOU CAN ALSO LEARN</span>
-                            <span class="mt-2 text-2xl w-30rem"><span class="text-red-500 font-italic">Thesis Assistant</span> also gives you the knowledge about different business stuff that you may didn't know about. For example, what is "SME Enterprises" ? What does the word "CEO" stand for ?, what is "IPO" ?</span>
+                            <span class="mt-2 text-2xl"><span class="text-red-500 font-italic">Thesis Assistant</span> also gives you the knowledge about different business stuff that you may didn't know about. For example, what is "SME Enterprises" ? What does the word "CEO" stand for ?, what is "IPO" ?</span>
                         </div>
                         <Button class="p-4 bg-red-400 hover:bg-red-600 border-none">Try it out !<i class="pi pi-angle-right ml-2" style="font-size: 1rem"></i></Button>
                     </div>
@@ -82,7 +82,7 @@ const store = useNoteStore();
             <div class="border-round-3xl flex flex-column">
                 <img src="../../assets/images/Screenshot 2024-06-10 185658.png" class="border-round-xl m-auto" width="100%" alt="">
                 <span class="font-bold text-5xl mt-6 text-blue-50">EXTREMELY FRIENDLY UI</span>
-                <span class="my-6 text-2xl text-blue-50"><span class="text-gray-900 font-bold">Thesis Assistant</span> is designed in a very friendly way that you can jump right in and get used to it.</span>
+                <span class="my-6 text-2xl text-blue-50"><span class="text-blue-50 font-bold">Thesis Assistant</span> is designed in a very friendly way that you can jump right in and get used to it.</span>
                 <IntroduceButtons/>
             </div>
         </div>
@@ -116,7 +116,7 @@ const store = useNoteStore();
     }
     
     .you-also{
-        padding: 5rem 15%;
+        padding: 3rem 15%;
     }
 
     .UI-content{
