@@ -10,7 +10,9 @@
         <SideBar/>
         <div class="flex align-items-center gap-7">
             <Button icon="pi pi-bars" @click="store.visible = true" severity="secondary" text rounded aria-label="Bookmark"/>
-            <span class="cursor-pointer hover:bg-gray-100 p-3 border-round-md">Fuctions</span>
+            <RouterLink to = "/topics" style="text-decoration: none; color: inherit;">
+                <span class="cursor-pointer hover:bg-gray-100 p-3 border-round-md">Topics</span>
+            </RouterLink>
             <span class="cursor-pointer hover:bg-gray-100 p-3 border-round-md">Contact me</span>
 
 

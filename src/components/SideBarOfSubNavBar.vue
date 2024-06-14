@@ -63,13 +63,13 @@ const store = useHomeStore();
                                             }"
                                             class="flex align-items-center cursor-pointer p-3 border-round text-700 hover:surface-100 transition-duration-150 transition-colors p-ripple"
                                         >
-                                            <i class="pi pi-chart-line mr-2"></i>
-                                            <span class="font-medium">Reports</span>
+                                            <i class="pi pi-building mr-2"></i>
+                                            <span class="font-medium">Enterprises</span>
                                             <i class="pi pi-chevron-down ml-auto"></i>
                                         </a>
                                         <ul class="list-none py-0 pl-3 pr-0 m-0 hidden overflow-y-hidden transition-all transition-duration-400 transition-ease-in-out">
                                             <li>
-                                                <a
+                                                <div
                                                     v-ripple
                                                     v-styleclass="{
                                                         selector: '@next',
@@ -80,35 +80,22 @@ const store = useHomeStore();
                                                     }"
                                                     class="flex align-items-center cursor-pointer p-3 border-round text-700 hover:surface-100 transition-duration-150 transition-colors p-ripple"
                                                 >
-                                                    <i class="pi pi-chart-line mr-2"></i>
-                                                    <span class="font-medium">Revenue</span>
-                                                    <i class="pi pi-chevron-down ml-auto"></i>
-                                                </a>
-                                                <ul class="list-none py-0 pl-3 pr-0 m-0 hidden overflow-y-hidden transition-all transition-duration-400 transition-ease-in-out">
-                                                    <li>
-                                                        <a v-ripple class="flex align-items-center cursor-pointer p-3 border-round text-700 hover:surface-100 transition-duration-150 transition-colors p-ripple">
-                                                            <i class="pi pi-table mr-2"></i>
-                                                            <span class="font-medium">View</span>
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <a v-ripple class="flex align-items-center cursor-pointer p-3 border-round text-700 hover:surface-100 transition-duration-150 transition-colors p-ripple">
-                                                            <i class="pi pi-search mr-2"></i>
-                                                            <span class="font-medium">Search</span>
-                                                        </a>
-                                                    </li>
-                                                </ul>
+                                                    <i class="pi pi-circle-fill mr-2"></i>
+                                                    <span class="font-medium">Japan</span>
+                                                </div>
                                             </li>
                                             <li>
-                                                <a v-ripple class="flex align-items-center cursor-pointer p-3 border-round text-700 hover:surface-100 transition-duration-150 transition-colors p-ripple">
-                                                    <i class="pi pi-chart-line mr-2"></i>
-                                                    <span class="font-medium">Expenses</span>
-                                                </a>
+                                                <RouterLink to="/country/america" style="text-decoration: none; color: inherit;" @click="closeCallback">
+                                                <div v-ripple class="flex align-items-center cursor-pointer p-3 border-round text-700 hover:surface-100 transition-duration-150 transition-colors p-ripple">
+                                                    <i class="pi pi-circle-fill mr-2"></i>
+                                                    <span class="font-medium">America</span>
+                                                </div>
+                                                </RouterLink>
                                             </li>
                                         </ul>
                                     </li>
                                     <li>
-                                        <RouterLink to = "topics/notes" style="text-decoration: none; color: inherit;" @click="closeCallback">
+                                        <RouterLink to = "/topics/notes" style="text-decoration: none; color: inherit;" @click="closeCallback">
                                             <a v-ripple class="flex align-items-center cursor-pointer p-3 border-round text-700 hover:surface-100 transition-duration-150 transition-colors p-ripple">
                                                 <i class="pi pi-pen-to-square mr-2"></i>
                                                 <span class="font-medium">Notes</span>

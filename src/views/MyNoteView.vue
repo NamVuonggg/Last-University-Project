@@ -4,7 +4,6 @@ import AddNoteModal from "@/components/AddNote/AddNoteModal.vue"
 import NoteComponent from "@/components/AddNote/NoteComponent.vue"
 import { useNoteStore } from '@/stores/noteview';
 const store = useNoteStore();
-
 const showImportant = ref(false);
 </script>
 
@@ -13,6 +12,7 @@ const showImportant = ref(false);
     <SubNavBar/>
 
     <div class="h-5rem"></div>
+    <Toast />
     <div class="container">
         <div class="flex align-items-center gap-3">
             <Button @click="store.activeNoteModal" class="mb-5">+ Add task</Button>

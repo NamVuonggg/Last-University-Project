@@ -1,7 +1,14 @@
-import { defineStore } from 'pinia'
-import { ref, reactive, computed } from 'vue'
+import { defineStore } from 'pinia';
+import { ref, reactive, computed } from 'vue';
+import { useToast } from "primevue/usetoast";
+
 export const useNoteStore = defineStore('note', () =>{
     const notes = reactive([]);
+
+    const toast = useToast();
+    const showSuccess = () => {
+        toast.add({ severity: 'success', summary: 'Success', detail: 'Note added', life: 3000 });
+    };
 
     const modalIsActive = ref(false);
     const activeNoteModal = () =>{
@@ -25,6 +32,7 @@ export const useNoteStore = defineStore('note', () =>{
                 important: false,
             });
             closeModal();
+            showSuccess();
         }else{
             textEmptyError.value = true;
             setTimeout(function(){
@@ -66,6 +74,8 @@ export const useNoteStore = defineStore('note', () =>{
         closeModal,
         deleteNote,
         updateImportant,
-        importantNotes
+        importantNotes,
+        toast,
+        showSuccess
      };
 })

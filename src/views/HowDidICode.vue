@@ -73,7 +73,7 @@
 
         <div class="card p-7 shadow-4 border-round-3xl flex flex-column">
             <span class="font-bold text-3xl">npm</span>
-            <span class="mt-3 text-2xl mt-4">npm is the world's largest software registry. Open source developers from every continent use npm to share and borrow packages, and many organizations use npm to manage private development as well. npm consists of three distinct components: the website, the Command Line Interface (CLI), the registry, Use the website to discover packages, set up profiles, and manage other aspects of your npm experience.</span>
+            <span class="mt-3 text-2xl mt-4">npm is the world's largest software registry. Open source developers from every continent use npm to share and borrow packages, and many organizations use npm to manage private development as well. <br> npm consists of three distinct components: the website, the Command Line Interface (CLI), the registry, Use the website to discover packages, set up profiles, and manage other aspects of your npm experience.</span>
             <img src="https://kinsta.com/wp-content/uploads/2022/06/what-is-npm-1024x512.png" class="border-round-xl mt-5" width="100%" alt="">
             <span class="mt-5 text-xl">You can checkout this link to know more about npm : <a href="https://www.npmjs.com/" target="_blank" style = "text-decoration: none;">npm</a></span>
         </div>
