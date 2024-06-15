@@ -44,9 +44,46 @@ const data = store.datas.find(d => d.id === parseInt(route.params.id));
             <div class="h-2rem"></div>
             <div class="text-2xl">{{ data.companyProduct1 }}</div>
         </div>
+            <div class="h-2rem"></div>
+        <div class="m-auto"> 
+            <p class=" text-center text-4xl font-bold mb-4">{{ data.companyProduct2name }}</p>
+            <img :src="data.companyProduct2Img" class="w-full m-auto border-round-xl">
+            <div class="h-2rem"></div>
+            <div class="text-2xl">{{ data.companyProduct2 }}</div>
+        </div>
+            <div class="h-2rem"></div>
+        <div class="m-auto"> 
+            <p class=" text-center text-4xl font-bold mb-4">{{ data.companyProduct3name }}</p>
+            <img :src="data.companyProduct3Img" class="w-full m-auto border-round-xl">
+            <div class="h-2rem"></div>
+            <div class="text-2xl">{{ data.companyProduct3 }}</div>
+        </div>
+            <div class="h-2rem"></div>
+        <div class="m-auto"> 
+            <p class=" text-center text-4xl font-bold mb-4">{{ data.companyProduct4name }}</p>
+            <img :src="data.companyProduct4Img" class="w-full m-auto border-round-xl">
+            <div class="h-2rem"></div>
+            <div class="text-2xl">{{ data.companyProduct4 }}</div>
+        </div>
+            <div class="h-2rem"></div>
+        <div class="m-auto"> 
+            <p class=" text-center text-4xl font-bold mb-4">{{ data.companyProduct5name }}</p>
+            <img :src="data.companyProduct5Img" class="w-full m-auto border-round-xl">
+            <div class="h-2rem"></div>
+            <div class="text-2xl">{{ data.companyProduct5 }}</div>
+        </div>
+        <div class="h-2rem"></div>
+        <div class="m-auto"> 
+            <p class=" text-center text-4xl font-bold mb-4">{{ data.companyMarketingName }}</p>
+            <img :src="data.companyMarketingImg" class="w-full m-auto border-round-xl">
+            <div class="h-2rem"></div>
+            <div class="text-2xl">{{ data.companyMarketing }}</div>
+        </div>
         
     <ScrollTop />
     </div>
+    <div class="h-8rem"></div>
+    <Footer />
 </template>
 
 <style lang="scss" scoped>
