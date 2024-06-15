@@ -80,7 +80,7 @@ const store = useNoteStore();
         <!-- extremely friendly UI -->
         <div class="UI-content">
             <div class="border-round-3xl flex flex-column">
-                <img src="../../assets/images/Screenshot 2024-06-10 185658.png" class="border-round-xl m-auto" width="100%" alt="">
+                <img src="../../assets/images/Screenshot 2024-06-15 133708.png" class="border-round-xl m-auto" width="100%" alt="">
                 <span class="font-bold text-5xl mt-6 text-blue-50">EXTREMELY FRIENDLY UI</span>
                 <span class="my-6 text-2xl text-blue-50"><span class="text-blue-50 font-bold">Thesis Assistant</span> is designed in a very friendly way that you can jump right in and get used to it.</span>
                 <IntroduceButtons/>
