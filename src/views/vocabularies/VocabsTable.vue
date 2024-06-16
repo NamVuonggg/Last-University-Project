@@ -13,8 +13,6 @@ const vocabList = selectedVocab ? selectedVocab.content : [];
 </script>
 
 <template>
-    <NavBar />
-    <SubNavBar />
     <div class="container">
         <DataTable :value="vocabList" stripedRows tableStyle="min-width: 50rem">
             <Column field="word" header="Word"></Column>
