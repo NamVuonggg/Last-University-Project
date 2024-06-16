@@ -13,7 +13,9 @@
             <RouterLink to = "/topics" style="text-decoration: none; color: inherit;">
                 <span class="cursor-pointer hover:bg-gray-100 p-3 border-round-md">Topics</span>
             </RouterLink>
-            <span class="cursor-pointer hover:bg-gray-100 p-3 border-round-md">Contact me</span>
+            <RouterLink to = "/contact" style="text-decoration: none; color: inherit;">
+                <span class="cursor-pointer hover:bg-gray-100 p-3 border-round-md">Contact me</span>
+            </RouterLink>
 
 
         </div>

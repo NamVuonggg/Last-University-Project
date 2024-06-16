@@ -9,7 +9,9 @@ import AmericaEntTech from "../views/enterprises/america/Technology/AmericaEntTe
 import EntTechView from "../views/enterprises/america/Technology/EntTechView.vue"
 import AmericaEntType from "../views/enterprises/america/AmericaEntType.vue";
 import CountrySelect from "../views/enterprises/CountrySelect.vue";
-import JapanEntType from "../views/enterprises/japan/JapanEntType.vue"
+import JapanEntType from "../views/enterprises/japan/JapanEntType.vue";
+import BusinessVocabs from "../views/vocabularies/BusinessVocabs.vue";
+import ContactView from "@/views/ContactView.vue"
 
 
 export const router = createRouter({
@@ -24,6 +26,11 @@ export const router = createRouter({
       path: "/home",
       name: "homeview",
       component: HomeView
+    },
+    {
+      path: "/contact",
+      name: "contact",
+      component: ContactView
     },
     {
       path: "/codeprocesses",
@@ -44,6 +51,11 @@ export const router = createRouter({
       path: "/topics/notes",
       name: "mynotes",
       component: Notes
+    },
+    {
+      path: "/topics/vocabs",
+      name: "myvocabs",
+      component: BusinessVocabs
     },
     {
       path: "/country",
