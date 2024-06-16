@@ -26,6 +26,15 @@ const store = useNoteStore();
         </div>
             
         <div class="h-10rem"></div>
+        <div class="note-txt text-center font-bold text-5xl mb-5">- Your quick 
+            <RouterLink to = "/topics/notes" style="text-decoration: none; color: inherit;">
+                <span class="tetx-red-500">note</span> 
+            </RouterLink>
+        view is here -</div>
+        <NoteComponent />
+
+        <div class="h-10rem"></div>
+
 
         <div class="flex flex-column align-items-center">
             <div class="flex flex-column gap-5">
@@ -108,7 +117,11 @@ const store = useNoteStore();
 
     .thesis-txt{
         font-family: "Shadows Into Light"
-    }
+    };
+
+    .note-txt{
+        font-family: "Shadows Into Light"
+    };
 }
 
 @keyframes slidedown-icon {
