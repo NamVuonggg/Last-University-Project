@@ -61,7 +61,7 @@ const store = useNoteStore();
 @import url('https://fonts.googleapis.com/css2?family=Playwrite+NL:wght@100..400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lilita+One&family=Playwrite+NL:wght@100..400&display=swap');
 .container{
-    padding : 0 25%;
+    padding : 0 15%;
 
     .thesis-txt{
         font-family: "Lilita One"
