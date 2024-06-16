@@ -54,30 +54,6 @@ export const useEntDataStore = defineStore('us-data', () => {
             "name": "Meta",
             "money": 600000,
             "companyImg": "https://cdn-icons-png.flaticon.com/128/0/747.png" // Meta
-        },
-        {
-            "id": 6,
-            "name": "Meta",
-            "money": 700000,
-            "companyImg": "https://cdn-icons-png.flaticon.com/128/0/747.png" // Meta
-        },
-        {
-            "id": 7,
-            "name": "Meta",
-            "money": 800000,
-            "companyImg": "https://cdn-icons-png.flaticon.com/128/0/747.png" // Meta
-        },
-        {
-            "id": 8,
-            "name": "Meta",
-            "money": 900000,
-            "companyImg": "https://cdn-icons-png.flaticon.com/128/0/747.png" // Meta
-        },
-        {
-            "id": 9,
-            "name": "Meta",
-            "money": 100000,
-            "companyImg": "https://cdn-icons-png.flaticon.com/128/0/747.png" // Meta
         }
     ])
   

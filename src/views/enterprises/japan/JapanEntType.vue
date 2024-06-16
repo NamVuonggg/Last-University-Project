@@ -1,7 +1,7 @@
 <script setup>
-import { useAmericaEntTypeStore } from "@/stores/america-ent-type"
+import { useJapanEntTypeStore } from '@/stores/japan-ent-type';
 
-const store = useAmericaEntTypeStore();
+const store = useJapanEntTypeStore();
 </script>
 
 

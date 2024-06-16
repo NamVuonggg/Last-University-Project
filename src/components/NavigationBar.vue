@@ -35,5 +35,7 @@ const store = useHomeStore();
 
 
 <style lang="scss" scoped>
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&family=Playwrite+NL:wght@100..400&family=Shadows+Into+Light&display=swap');
+
 
 </style>

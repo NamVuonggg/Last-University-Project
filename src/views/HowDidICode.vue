@@ -6,9 +6,9 @@
     <NavBar/>
     <SubNavBar/>
     <div class="container mt-7 flex flex-column">
-        <span class="font-bold text-4xl">HOW DID I CREATE <span class="text-green-500">THESIS ASSISTANT</span> ?</span>
+        <span class="top-txt font-bold text-6xl">HOW DID I CREATE <span class="text-red-500">THESIS ASSISTANT</span> ?</span>
 
-        <div class="h-6rem"></div>
+        <div class="h-3rem"></div>
 
         <div class="card p-7 shadow-4 border-round-3xl flex flex-column">
             <Stepper class="py-5">
@@ -112,7 +112,14 @@
 
 
 <style lang="scss" scoped>
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+NL:wght@100..400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&family=Playwrite+NL:wght@100..400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&family=Playwrite+NL:wght@100..400&family=Shadows+Into+Light&display=swap');
     .container{
-        padding: 0 15%;
+        padding: 0 25%;
+
+        .top-txt{
+            font-family: "Shadows Into Light" ;
+        }
     }
 </style>

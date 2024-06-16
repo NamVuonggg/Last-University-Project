@@ -5,12 +5,11 @@ import HowDidICode from "../views/HowDidICode.vue";
 import TimeLine from "../views/TimeLine.vue";
 import Start from "../views/QuickStartView.vue";
 import Notes from "../views/MyNoteView.vue";
-import AmericaEntTech from "../views/enterprises/america/AmericaEntTech.vue";
-import EntView from "../views/enterprises/EntView.vue"
+import AmericaEntTech from "../views/enterprises/america/Technology/AmericaEntTech.vue";
+import EntTechView from "../views/enterprises/america/Technology/EntTechView.vue"
 import AmericaEntType from "../views/enterprises/america/AmericaEntType.vue";
-
-
-import CountrySelect from "../views/enterprises/america/CountrySelect.vue";
+import CountrySelect from "../views/enterprises/CountrySelect.vue";
+import JapanEntType from "../views/enterprises/japan/JapanEntType.vue"
 
 
 export const router = createRouter({
@@ -57,6 +56,11 @@ export const router = createRouter({
       component: AmericaEntType,
     },
     {
+      path: "/country/japan",
+      name: "japan-ent-types",
+      component: JapanEntType
+    },
+    {
       path:"/country/america/Technology",
       name: "america-ent-tech",
       component: AmericaEntTech
@@ -64,7 +68,7 @@ export const router = createRouter({
     {
       path:"/country/america/Technology/:id",     
       name: "ent-view",
-      component: EntView,
+      component: EntTechView,
     }
   ]
 });
