@@ -21,7 +21,7 @@ const store = useHomeStore();
         </IconField>
         <div class="flex gap-2 align-items-center">
             <RouterLink to="/home" style="text-decoration: none; color: inherit;">
-                <i class="pi pi-home px-3 text-blue-50" style="font-size: 22px; opacity: 0.9;"></i>
+                <i class="pi pi-home px-3 text-gray-700" style="font-size: 22px;"></i>
             </RouterLink>
             <RouterLink to="/" style="text-decoration: none; color: inherit;">
                 <div class="card flex justify-content-center">
