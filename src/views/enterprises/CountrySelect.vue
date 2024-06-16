@@ -2,8 +2,6 @@
 </script>
 
 <template>
-    <NavBar/>
-    <SubNavBar/>
     <div class="h-15rem"></div>
     <div class="container">
         <div class="grid">

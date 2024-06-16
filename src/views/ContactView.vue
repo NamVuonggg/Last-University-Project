@@ -1,14 +1,15 @@
 <script setup>
+import { useRoute, useRouter } from 'vue-router';
+
+const route = useRoute();
+const router = useRouter();
 
 </script>
 
 <template>
-  <NavBar />
-  <SubNavBar />
-  <div class="h-10rem"></div>
+  <div class="h-5rem"></div>
   <p class="txt text-center font-bold text-8xl">MY PHONE NUMBER:</p>
   <p class="txt text-center font-bold text-xl"><img src="https://cdn-icons-png.flaticon.com/128/10048/10048325.png">070 8349 60** </p>
-  
 </template>
 
 

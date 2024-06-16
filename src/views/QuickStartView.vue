@@ -2,8 +2,6 @@
 </script>
 
 <template>
-    <NavBar/>
-    <SubNavBar/>
         <div class="container">
             <div class="grid h-full m-auto align-items-center">
                 <div class="col-12 md:col-6 xl:col-4">

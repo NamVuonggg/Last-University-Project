@@ -8,9 +8,6 @@ const showImportant = ref(false);
 </script>
 
 <template>
-    <NavBar/>
-    <SubNavBar/>
-
     <div class="h-5rem"></div>
     <Toast />
     <div class="container">

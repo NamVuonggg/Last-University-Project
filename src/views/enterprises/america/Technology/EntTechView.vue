@@ -11,8 +11,6 @@ const data = store.datas.find(d => d.id === parseInt(route.params.id));
 </script>
 
 <template>
-    <NavBar/>
-    <SubNavBar/>
     <div class="h-5rem"></div>
     <Toast />
     <AddNoteModal v-if="notestore.modalIsActive"/>
@@ -82,8 +80,6 @@ const data = store.datas.find(d => d.id === parseInt(route.params.id));
         
     <ScrollTop />
     </div>
-    <div class="h-8rem"></div>
-    <Footer />
 </template>
 
 <style lang="scss" scoped>

@@ -12,7 +12,7 @@ import CountrySelect from "../views/enterprises/CountrySelect.vue";
 import JapanEntType from "../views/enterprises/japan/JapanEntType.vue";
 import BusinessVocabs from "../views/vocabularies/BusinessVocabs.vue";
 import ContactView from "@/views/ContactView.vue"
-
+import ContactPhone from "@/components/HomeView/ContactPhone.vue"
 
 export const router = createRouter({
     history: createWebHistory(),
@@ -30,7 +30,14 @@ export const router = createRouter({
     {
       path: "/contact",
       name: "contact",
-      component: ContactView
+      component: ContactView,
+      children:[
+        {
+          path: "phone",
+          name: "contact-phone",
+          component: ContactPhone
+        }
+      ]
     },
     {
       path: "/codeprocesses",

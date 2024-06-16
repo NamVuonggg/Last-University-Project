@@ -5,8 +5,6 @@ const store = useEntDataStore();
 </script>
 
 <template>
-    <NavBar/>
-    <SubNavBar/>
     <div class="h-6rem"></div>
     <div class="container">
         <RouterLink :to="`/country/america/Technology/${data.id}`" v-for="data in store.datas" :key="data.id" style="text-decoration: none; color:inherit;">

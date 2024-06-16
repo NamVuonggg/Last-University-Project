@@ -3,8 +3,6 @@
 </script>
 
 <template>
-    <NavBar/>
-    <SubNavBar/>
     <div class="container mt-7 flex flex-column">
         <span class="top-txt font-bold text-6xl">HOW DID I CREATE <span class="text-red-500">THESIS ASSISTANT</span> ?</span>
 
@@ -107,7 +105,6 @@
         <ScrollTop />
         <div class="h-10rem"></div>
     </div>
-    <Footer />
 </template>
 
 

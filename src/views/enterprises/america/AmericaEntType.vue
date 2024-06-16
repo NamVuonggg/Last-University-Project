@@ -6,8 +6,6 @@ const store = useAmericaEntTypeStore();
 
 
 <template>  
-    <NavBar/>
-    <SubNavBar/>
     <div class="h-8rem"></div>
     <div class="container">
         <RouterLink :to="`/country/america/${type.type}`" v-for="type in store.types" :key="type.id" style="text-decoration: none; color: inherit">

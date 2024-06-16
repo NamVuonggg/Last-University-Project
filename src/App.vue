@@ -4,7 +4,11 @@ import { RouterView } from 'vue-router';
 
 <template>
   <div class="container">
+    <NavBar />
+    <SubNavBar />
     <RouterView/>
+    <div class="h-30rem"></div>
+    <Footer />
   </div>
 </template>
 

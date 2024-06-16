@@ -10,8 +10,6 @@ const events = ref([
 </script>
 
 <template>
-    <NavBar/>
-    <SubNavBar/>
     <div class="h-5rem"></div>
     <div class="card">
         <Timeline :value="events" align="alternate" class="customized-timeline">
@@ -40,8 +38,6 @@ const events = ref([
             </template>
         </Timeline>
     </div>
-    <div class="h-10rem"></div>
-    <Footer />
 </template>
 
 <style lang="scss" scoped>
