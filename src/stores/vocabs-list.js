@@ -1,5 +1,5 @@
 import { defineStore } from 'pinia'
-import { ref, reactive } from 'vue'
+import { reactive } from 'vue'
 export const useVocabListStore = defineStore('vocabsList', () =>{
 
     const vocabs = reactive([
