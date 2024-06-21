@@ -11,7 +11,7 @@ const showPhone = () => {
 <template>
 
   <div class="h-10rem"></div>
-  <p class="txt text-center font-bold text-8xl">MY PHONE NUMBER:</p>
+  <p class="txt text-center font-bold text-8xl">My phone number:</p>
   <p class="txt text-center font-bold text-xl"><img src="https://cdn-icons-png.flaticon.com/128/10048/10048325.png"><Button @click="showPhone" class="bg-black-alpha-90 border-none hover:bg-red-600"> Show phone number</Button></p>
   <RouterView />
 </template>
