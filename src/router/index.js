@@ -11,8 +11,9 @@ import AmericaEntType from "../views/enterprises/america/AmericaEntType.vue";
 import CountrySelect from "../views/enterprises/CountrySelect.vue";
 import JapanEntType from "../views/enterprises/japan/JapanEntType.vue";
 import BusinessVocabs from "../views/vocabularies/BusinessVocabs.vue";
-import ContactView from "@/views/ContactView.vue"
-import ContactPhone from "@/components/HomeView/ContactPhone.vue"
+import ContactView from "@/views/ContactView.vue";
+import ContactPhone from "@/components/HomeView/ContactPhone.vue";
+import VocabsTable from "@/views/vocabularies/VocabsTable.vue";
 
 export const router = createRouter({
     history: createWebHistory(),
@@ -63,6 +64,11 @@ export const router = createRouter({
       path: "/topics/vocabs",
       name: "myvocabs",
       component: BusinessVocabs
+    },
+    {
+      path: "/topics/vocabs/:id",
+      name: "vocabstable",
+      component: VocabsTable
     },
     {
       path: "/country",
