@@ -28,7 +28,7 @@ const store = useVocabListStore();
 <style lang="scss" scoped>
 @import url('https://fonts.googleapis.com/css2?family=Lilita+One&family=Playwrite+NL:wght@100..400&family=Shadows+Into+Light&display=swap');
     .container{
-        padding: 0 25%;
+        padding: 0 20%;
 
         .top-txt{
             font-family: "Shadows Into Light";
