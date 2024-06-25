@@ -26,7 +26,7 @@ const store = useNoteStore();
 
 <style scoped>
     .container {
-        padding: 0 13rem;
+        padding: 0 20%;
     }
 
     .newnote-modal {

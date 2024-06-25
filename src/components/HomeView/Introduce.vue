@@ -111,7 +111,7 @@ const store = useNoteStore();
 @import url('https://fonts.googleapis.com/css2?family=Lilita+One&family=Playwrite+NL:wght@100..400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lilita+One&family=Playwrite+NL:wght@100..400&family=Shadows+Into+Light&display=swap');
 .container{
-    padding : 0 25%;
+    padding : 0 20%;
 
     .thesis-txt{
         font-family: "Shadows Into Light"
