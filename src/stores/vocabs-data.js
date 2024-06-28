@@ -747,6 +747,264 @@ export const useVocabsDataStore = defineStore('vocabs-data', () =>{
                 },
             ]
         },
+        {
+            "id": 8,
+            "name": "Short words meanings",
+            "image": "https://cdn-icons-png.flaticon.com/128/3285/3285819.png",
+            "content": [
+                {   
+                    "id": 1,
+                    "word": "B2B",
+                    "mean": "Business to Business"
+                },
+                {   
+                    "id": 2,
+                    "word": "B2C",
+                    "mean": "Business to Consumer"
+                },
+                {   
+                    "id": 3,
+                    "word": "CAO",
+                    "mean": "Chief Accounting Officer"
+                },
+                {   
+                    "id": 4,
+                    "word": "CEO",
+                    "mean": "Chief Executive Officer"
+                },
+                {   
+                    "id": 5,
+                    "word": "CFO",
+                    "mean": "Chief Financial Officer"
+                },
+                {   
+                    "id": 6,
+                    "word": "CMO",
+                    "mean": "Chief Marketing Officer"
+                },
+                {   
+                    "id": 7,
+                    "word": "CSO",
+                    "mean": "Chief Security Officer"
+                },
+                {   
+                    "id": 8,
+                    "word": "CRM",
+                    "mean": "Customer Relationship Management"
+                },
+                {   
+                    "id": 9,
+                    "word": "EXP",
+                    "mean": "Export"
+                },
+                {   
+                    "id": 10,
+                    "word": "GDP",
+                    "mean": "Gross Domestic Product"
+                },
+                {   
+                    "id": 11,
+                    "word": "HR",
+                    "mean": "Human Resources"
+                },
+                {   
+                    "id": 12,
+                    "word": "HQ",
+                    "mean": "Head Quarters"
+                },
+                {   
+                    "id": 13,
+                    "word": "IR",
+                    "mean": "Interest Rate"
+                },
+                {   
+                    "id": 14,
+                    "word": "LLC",
+                    "mean": "Limited Liability Company"
+                },
+                {   
+                    "id": 15,
+                    "word": "NDA",
+                    "mean": "Non-Disclosure Agreement"
+                },
+                {   
+                    "id": 16,
+                    "word": "R&D",
+                    "mean": "Research and Development"
+                },
+                {   
+                    "id": 17,
+                    "word": "SCM",
+                    "mean": "Supply Chain Management"
+                },
+                {   
+                    "id": 18,
+                    "word": "AWB",
+                    "mean": "Airway Bill"
+                },
+                {   
+                    "id": 19,
+                    "word": "BL",
+                    "mean": "Bill of Lading"
+                },
+                {   
+                    "id": 20,
+                    "word": "CIF",
+                    "mean": "Cost Insurance Freight"
+                },
+                {   
+                    "id": 21,
+                    "word": "CIP",
+                    "mean": "Carriage and Insurance Paid To:"
+                },
+                {   
+                    "id": 22,
+                    "word": "C&F",
+                    "mean": "Cost and Freight"
+                },
+                {   
+                    "id": 23,
+                    "word": "CPT",
+                    "mean": "Carriage Paid To"
+                },
+                {   
+                    "id": 24,
+                    "word": "DAT",
+                    "mean": "Delivered At Terminal"
+                },
+                {   
+                    "id": 25,
+                    "word": "DDP",
+                    "mean": "Delivered Duty Paid"
+                },
+                {   
+                    "id": 26,
+                    "word": "EXW",
+                    "mean": "Ex Works"
+                },
+                {   
+                    "id": 27,
+                    "word": "FAS",
+                    "mean": "Free Alongside Ship"
+                },
+                {   
+                    "id": 28,
+                    "word": "FCA",
+                    "mean": "Free Carrier"
+                },
+                {   
+                    "id": 29,
+                    "word": "FOB",
+                    "mean": "Free On Board"
+                },
+                {   
+                    "id": 30,
+                    "word": "CAPEX",
+                    "mean": "Capital Expenditure"
+                },
+                {   
+                    "id": 31,
+                    "word": "COGS",
+                    "mean": "Cost of Goods Sold"
+                },
+                {   
+                    "id": 32,
+                    "word": "EBIT",
+                    "mean": "Earnings Before Interest and Taxes"
+                },
+                {   
+                    "id": 33,
+                    "word": "EBITDA",
+                    "mean": "Earnings Before Interest Taxes Depreciation and Amortization"
+                },
+                {   
+                    "id": 34,
+                    "word": "EPS",
+                    "mean": "Earnings per Share"
+                },
+                {   
+                    "id": 35,
+                    "word": "FIFO",
+                    "mean": "First In First Out"
+                },
+                {   
+                    "id": 36,
+                    "word": "GAAP",
+                    "mean": "Generally Accepted Accounting Principles"
+                },
+                {   
+                    "id": 37,
+                    "word": "GAAS",
+                    "mean": "Generally Accepted Audit Standards"
+                },
+                {   
+                    "id": 38,
+                    "word": "GP",
+                    "mean": "Gross Profit"
+                },
+                {   
+                    "id": 39,
+                    "word": "IPO",
+                    "mean": "Initial Public Offering"
+                },
+                {   
+                    "id": 40,
+                    "word": "LC",
+                    "mean": "Letter of Credit"
+                },
+                {   
+                    "id": 41,
+                    "word": "LIFO",
+                    "mean": "Last In First Out"
+                },
+                {   
+                    "id": 42,
+                    "word": "NOPAT",
+                    "mean": "Net Operating Profit After Tax"
+                },
+                {   
+                    "id": 43,
+                    "word": "NPV",
+                    "mean": "Net Present Value"
+                },
+                {   
+                    "id": 44,
+                    "word": "OPEX",
+                    "mean": "Operational Expenditure"
+                },
+                {   
+                    "id": 45,
+                    "word": "P&L",
+                    "mean": "Profit and Loss"
+                },
+                {   
+                    "id": 46,
+                    "word": "ROA",
+                    "mean": "Return on Assets"
+                },
+                {   
+                    "id": 47,
+                    "word": "ROE",
+                    "mean": "Return on Equity"
+                },
+                {   
+                    "id": 48,
+                    "word": "ROI",
+                    "mean": "Return on Investment"
+                },
+                {   
+                    "id": 49,
+                    "word": "ROS",
+                    "mean": "Return on Sales"
+                },
+                {   
+                    "id": 50,
+                    "word": "WACC",
+                    "mean": "Weighted Average Cost of Capital"
+                }
+            ]
+            
+        },
     ])
 
     return { vocabs }

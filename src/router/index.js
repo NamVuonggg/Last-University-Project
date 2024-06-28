@@ -3,7 +3,7 @@ import HomeView from "../views/HomeView.vue";
 import LockView from "../views/LockView.vue";
 import HowDidICode from "../views/HowDidICode.vue";
 import TimeLine from "../views/TimeLine.vue";
-import Start from "../views/QuickStartView.vue";
+import Topics from "../views/TopicsView.vue";
 import Notes from "../views/MyNoteView.vue";
 import AmericaEntTech from "../views/enterprises/america/Technology/AmericaEntTech.vue";
 import EntTechView from "../views/enterprises/america/Technology/EntTechView.vue"
@@ -53,7 +53,7 @@ export const router = createRouter({
     {
       path: "/topics",
       name: "start",
-      component: Start,
+      component: Topics,
     },
     {
       path: "/topics/notes",
