@@ -31,6 +31,10 @@ export const useVocabListStore = defineStore('vocabsList', () =>{
             id: 7,
             name: "Legal terms and meanings",
         },
+        {
+            id: 8,
+            name: "Business short words meanings",
+        },
 
     ])
 
