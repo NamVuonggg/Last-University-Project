@@ -2,9 +2,7 @@
 import { RouterLink } from "vue-router";
 import { useHomeStore } from "@/stores/homeview";
 import { useVocabListStore } from "@/stores/vocabs-list";
-import { useVocabsDataStore } from "@/stores/vocabs-data"
 
-const vocabsDataStore = useVocabsDataStore();
 const vocabsListStore = useVocabListStore();
 const store = useHomeStore();
 
