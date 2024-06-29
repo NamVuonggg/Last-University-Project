@@ -28,45 +28,69 @@ const data = store.datas.find(d => d.id === parseInt(route.params.id));
             <div class="h-2rem"></div>
         <div class="text-2xl">{{ data.companyIntro2 }}</div>
             <div class="h-2rem"></div>
+        <div class="text-2xl">{{ data.companyIntro3 }}</div>
+            <div class="h-2rem"></div>
+        <div class="text-2xl">{{ data.companyIntro4 }}</div>
+            <div class="h-2rem"></div>
         <div class="m-auto"> 
             <p class=" text-center text-4xl font-bold mb-4">Company Headquarter</p>
             <img :src="data.companyHQ" class="w-full m-auto border-round-xl">
         </div>
             <div class="h-2rem"></div>
         <div class="text-center text-4xl font-bold mb-4">History</div>
-        <div class="text-2xl">{{ data.companyHistory }}</div>
+        <div class="text-2xl">{{ data.companyHistory1 }}</div>
+            <div class="h-2rem"></div>
+        <div class="text-2xl">{{ data.companyHistory2 }}</div>
+            <div class="h-2rem"></div>
+        <div class="text-2xl">{{ data.companyHistory3 }}</div>
+            <div class="h-2rem"></div>
+        <div class="text-2xl">{{ data.companyHistory4 }}</div>
+            <div class="h-2rem"></div>
+        <div class="text-2xl">{{ data.companyHistory5 }}</div>
+            <div class="h-2rem"></div>
+        <div class="text-2xl">{{ data.companyHistory6 }}</div>
+            <div class="h-2rem"></div>
+        <div class="text-3xl font-bold">{{ data.companyTransation }}</div>
+            <div class="h-2rem"></div>
+        <div class="text-2xl">{{ data.companyHistory7 }}</div>
+            <div class="h-2rem"></div>
+        <div class="text-2xl">{{ data.companyHistory8 }}</div>
+            <div class="h-2rem"></div>
+        <div class="text-2xl">{{ data.companyHistory9 }}</div>
             <div class="h-2rem"></div>
         <div class="m-auto"> 
             <p class=" text-center text-4xl font-bold mb-4">Company Products</p>
-            <img :src="data.companyProductImg" class="w-full m-auto border-round-xl">
+            <img :src="data.companyProductImg1" class="w-full m-auto border-round-xl">
             <div class="h-2rem"></div>
             <div class="text-2xl">{{ data.companyProduct1 }}</div>
         </div>
             <div class="h-2rem"></div>
         <div class="m-auto"> 
             <p class=" text-center text-4xl font-bold mb-4">{{ data.companyProduct2name }}</p>
-            <img :src="data.companyProduct2Img" class="w-full m-auto border-round-xl">
+            <img :src="data.companyProductImg2" class="w-full m-auto border-round-xl">
             <div class="h-2rem"></div>
             <div class="text-2xl">{{ data.companyProduct2 }}</div>
+            <div class="h-2rem"></div>
+            <div class="text-2xl">{{ data.companyProduct21 }}</div>
         </div>
             <div class="h-2rem"></div>
         <div class="m-auto"> 
             <p class=" text-center text-4xl font-bold mb-4">{{ data.companyProduct3name }}</p>
-            <img :src="data.companyProduct3Img" class="w-full m-auto border-round-xl">
+            <img :src="data.companyProductImg3" class="w-full m-auto border-round-xl">
             <div class="h-2rem"></div>
             <div class="text-2xl">{{ data.companyProduct3 }}</div>
         </div>
             <div class="h-2rem"></div>
         <div class="m-auto"> 
             <p class=" text-center text-4xl font-bold mb-4">{{ data.companyProduct4name }}</p>
-            <img :src="data.companyProduct4Img" class="w-full m-auto border-round-xl">
+            <img :src="data.companyProductImg4" class="w-full m-auto border-round-xl">
             <div class="h-2rem"></div>
             <div class="text-2xl">{{ data.companyProduct4 }}</div>
         </div>
             <div class="h-2rem"></div>
         <div class="m-auto"> 
             <p class=" text-center text-4xl font-bold mb-4">{{ data.companyProduct5name }}</p>
-            <img :src="data.companyProduct5Img" class="w-full m-auto border-round-xl">
+            <img :src="data.companyProductImg5" class="w-full m-auto border-round-xl">
             <div class="h-2rem"></div>
             <div class="text-2xl">{{ data.companyProduct5 }}</div>
         </div>
