@@ -35,25 +35,25 @@ export const useEntDataStore = defineStore('us-data', () => {
             "id": 2,
             "name": "Oracle",
             "money": 300000,
-            "companyImg": "https://cdn-icons-png.flaticon.com/128/5969/5969229.png" // Oracle
+            "companyImg": "https://assets.bwbx.io/images/users/iqjWHBFdfxIU/iKawEqCPyJhk/v1/-1x-1.jpg" // Oracle
         },
         {
             "id": 3,
             "name": "Microsoft",
             "money": 400000,
-            "companyImg": "https://cdn-icons-png.flaticon.com/128/0/747.png" // Microsoft
+            "companyImg": "https://i.pinimg.com/736x/a9/3a/a1/a93aa1092b969c05e47cb2f947368e6f.jpg" // Microsoft
         },
         {
             "id": 4,
             "name": "Tesla",
             "money": 500000,
-            "companyImg": "https://cdn-icons-png.flaticon.com/128/0/747.png" // Tesla
+            "companyImg": "https://techmonitor.ai/wp-content/uploads/sites/4/2017/03/shutterstock_1140629366.webp" // Tesla
         },
         {
             "id": 5,
             "name": "Meta",
             "money": 600000,
-            "companyImg": "https://cdn-icons-png.flaticon.com/128/0/747.png" // Meta
+            "companyImg": "https://www.investopedia.com/thmb/kcFOkUztiPsKpASAgZuolyM-19g=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/shutterstock_2113535186-750x406-5a8cb0db05f441deb12ea8d8c726a2c5.jpg" // Meta
         }
     ])
   
