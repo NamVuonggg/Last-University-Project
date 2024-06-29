@@ -30,7 +30,7 @@ const contentData = data.content.map(entry => ({
 <style lang="scss" scoped>
 @import url('https://fonts.googleapis.com/css2?family=Lilita+One&family=Playwrite+NL:wght@100..400&family=Shadows+Into+Light&display=swap');
     .container{
-        padding: 0 20%;
+        padding: 0 15%;
 
     }
 </style>
