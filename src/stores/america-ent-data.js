@@ -88,7 +88,8 @@ export const useEntDataStore = defineStore('us-data', () => {
             "companyProduct1Name": "Mac",
             "companyProductImg1": "https://www.apple.com/newsroom/images/product/imac/standard/apple_new-imac-spring21_mac-family_04202021_big.jpg.large.jpg",
             "companyProduct1Info1": "Macintosh, commonly known as Mac, is Apple's line of personal computers that use the company's proprietary macOS operating system. Personal computers were Apple's original business line, but as of the end of 2023 they account for only about eight percent of the company's revenue.",
-            "companyProduct1Info2": "There are six Macintosh computer families in production: iMac: Consumer all-in-one desktop computer, introduced in 1998. Mac Mini: Consumer sub-desktop computer, introduced in 2005. MacBook Pro: Professional notebook, introduced in 2006. Mac Pro: Professional workstation, introduced in 2006. MacBook Air: Consumer ultra-thin notebook, introduced in 2008. Mac Studio: Professional small form-factor workstation, introduced in 2022."
+            "companyProduct1Info2": "There are six Macintosh computer families in production: iMac: Consumer all-in-one desktop computer, introduced in 1998. Mac Mini: Consumer sub-desktop computer, introduced in 2005. MacBook Pro: Professional notebook, introduced in 2006. Mac Pro: Professional workstation, introduced in 2006. MacBook Air: Consumer ultra-thin notebook, introduced in 2008. Mac Studio: Professional small form-factor workstation, introduced in 2022.",
+            "companyProduct1Info3": "",
 
         },
         {

@@ -23,6 +23,7 @@ const contentData = data.content.map(entry => ({
                 <Column field="mean" header="MEANING"></Column>
             </DataTable>
         </div>
+        <ScrollTop />
     </div>
 </template>
 
