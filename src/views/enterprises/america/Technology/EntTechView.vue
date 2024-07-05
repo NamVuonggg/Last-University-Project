@@ -195,256 +195,345 @@ const data = store.datas.find(d => d.id === parseInt(route.params.id));
         <div class="text-2xl mb-4">{{ data.companyHistory1010 }}</div>
         <div class="text-2xl mb-4">{{ data.companyHistory1011 }}</div>
             
-        <div class="m-auto"> 
+        <div class="m-auto" v-if="data.companyProduct1Name" > 
             <p class=" text-center text-4xl font-bold mb-4">Company Products</p>
             <img :src="data.companyProductOverAllImage" class="w-full m-auto border-round-xl mb-4">
-            <div class="text-2xl mb-4">{{ data.companyProductIntro }}</div>
+
+            <div class="text-3xl font-bold mb-4">{{ data.companyProduct1Name }}</div>
+            <img :src="data.companyProductImg1" class="w-full m-auto border-round-xl"> 
+            <div class="text-2xl mb-4 mt-5">{{ data.companyProduct1Info1 }}</div> 
+            <div class="text-2xl mb-4">{{ data.companyProduct1Info2 }}</div>
+            <div class="text-2xl mb-4">{{ data.companyProduct1Info3 }}</div>
+            <div class="text-2xl mb-4">{{ data.companyProduct1Info4 }}</div>
+            <div class="text-2xl mb-4">{{ data.companyProduct1Info5 }}</div>
+            <div class="text-2xl mb-4">{{ data.companyProduct1Info6 }}</div>
+                
+            <div class="text-3xl font-bold mb-4">{{ data.companyProduct2Name }}</div>
+            <img :src="data.companyProductImg2" class="w-full m-auto border-round-xl"> 
+            <div class="text-2xl mb-4 mt-5">{{ data.companyProduct2Info1 }}</div>
+            <div class="text-2xl mb-4">{{ data.companyProduct2Info2 }}</div>
+            <div class="text-2xl mb-4">{{ data.companyProduct2Info3 }}</div>
+            <div class="text-2xl mb-4">{{ data.companyProduct2Info4 }}</div>
+            <div class="text-2xl mb-4">{{ data.companyProduct2Info5 }}</div>
+            <div class="text-2xl mb-4">{{ data.companyProduct2Info6 }}</div> 
+
+            <div class="text-3xl font-bold mb-4">{{ data.companyProduct3Name }}</div>
+            <img :src="data.companyProductImg3" class="w-full m-auto border-round-xl"> 
+            <div class="text-2xl mb-4 mt-5">{{ data.companyProduct3Info1 }}</div>
+            <div class="text-2xl mb-4">{{ data.companyProduct3Info2 }}</div>
+            <div class="text-2xl mb-4">{{ data.companyProduct3Info3 }}</div>
+            <div class="text-2xl mb-4">{{ data.companyProduct3Info4 }}</div>
+            <div class="text-2xl mb-4">{{ data.companyProduct3Info5 }}</div>
+            <div class="text-2xl mb-4">{{ data.companyProduct3Info6 }}</div>
+
+            <div class="text-3xl font-bold mb-4">{{ data.companyProduct4Name }}</div>
+            <img :src="data.companyProductImg4" class="w-full m-auto border-round-xl"> 
+            <div class="text-2xl mb-4 mt-5">{{ data.companyProduct4Info1 }}</div>
+            <div class="text-2xl mb-4">{{ data.companyProduct4Info2 }}</div>
+            <div class="text-2xl mb-4">{{ data.companyProduct4Info3 }}</div>
+            <div class="text-2xl mb-4">{{ data.companyProduct4Info4 }}</div>
+            <div class="text-2xl mb-4">{{ data.companyProduct4Info5 }}</div>
+            <div class="text-2xl mb-4">{{ data.companyProduct4Info6 }}</div> 
+
+            <div class="text-3xl font-bold mb-4">{{ data.companyProduct5Name }}</div>
+            <img :src="data.companyProductImg5" class="w-full m-auto border-round-xl"> 
+            <div class="text-2xl mb-4 mt-5">{{ data.companyProduct5Info1 }}</div>
+            <div class="text-2xl mb-4">{{ data.companyProduct5Info2 }}</div>
+            <div class="text-2xl mb-4">{{ data.companyProduct5Info3 }}</div>
+            <div class="text-2xl mb-4">{{ data.companyProduct5Info4 }}</div>
+            <div class="text-2xl mb-4">{{ data.companyProduct5Info5 }}</div>
+            <div class="text-2xl mb-4">{{ data.companyProduct5Info6 }}</div>
+
+            <div class="text-3xl font-bold mb-4">{{ data.companyProduct6Name }}</div>
+            <img :src="data.companyProductImg6" class="w-full m-auto border-round-xl"> 
+            <div class="text-2xl mb-4 mt-5">{{ data.companyProduct6Info1 }}</div> 
+            <div class="text-2xl mb-4">{{ data.companyProduct6Info2 }}</div>
+            <div class="text-2xl mb-4">{{ data.companyProduct6Info3 }}</div> 
+            <div class="text-2xl mb-4">{{ data.companyProduct6Info4 }}</div> 
+            <div class="text-2xl mb-4">{{ data.companyProduct6Info5 }}</div> 
+            <div class="text-2xl mb-4">{{ data.companyProduct6Info6 }}</div> 
+
         </div>
 
-        <div class="text-3xl font-bold mb-4">{{ data.companyProduct1Name }}</div>
-        <img :src="data.companyProductImg1" class="w-full m-auto border-round-xl"> 
-        <div class="text-2xl mb-4 mt-5">{{ data.companyProduct1Info1 }}</div> 
-        <div class="text-2xl mb-4">{{ data.companyProduct1Info2 }}</div>
-        <div class="text-2xl mb-4">{{ data.companyProduct1Info3 }}</div>
-        <div class="text-2xl mb-4">{{ data.companyProduct1Info4 }}</div>
-        <div class="text-2xl mb-4">{{ data.companyProduct1Info5 }}</div>
-        <div class="text-2xl mb-4">{{ data.companyProduct1Info6 }}</div>
-              
-        <div class="text-3xl font-bold mb-4">{{ data.companyProduct2Name }}</div>
-        <img :src="data.companyProductImg2" class="w-full m-auto border-round-xl"> 
-        <div class="text-2xl mb-4 mt-5">{{ data.companyProduct2Info1 }}</div>
-        <div class="text-2xl mb-4">{{ data.companyProduct2Info2 }}</div>
-        <div class="text-2xl mb-4">{{ data.companyProduct2Info3 }}</div>
-        <div class="text-2xl mb-4">{{ data.companyProduct2Info4 }}</div>
-        <div class="text-2xl mb-4">{{ data.companyProduct2Info5 }}</div>
-        <div class="text-2xl mb-4">{{ data.companyProduct2Info6 }}</div> 
+        
 
-        <div class="text-3xl font-bold mb-4">{{ data.companyProduct3Name }}</div>
-        <img :src="data.companyProductImg3" class="w-full m-auto border-round-xl"> 
-        <div class="text-2xl mb-4 mt-5">{{ data.companyProduct3Info1 }}</div>
-        <div class="text-2xl mb-4">{{ data.companyProduct3Info2 }}</div>
-        <div class="text-2xl mb-4">{{ data.companyProduct3Info3 }}</div>
-        <div class="text-2xl mb-4">{{ data.companyProduct3Info4 }}</div>
-        <div class="text-2xl mb-4">{{ data.companyProduct3Info5 }}</div>
-        <div class="text-2xl mb-4">{{ data.companyProduct3Info6 }}</div>
-
-        <div class="text-3xl font-bold mb-4">{{ data.companyProduct4Name }}</div>
-        <img :src="data.companyProductImg4" class="w-full m-auto border-round-xl"> 
-        <div class="text-2xl mb-4 mt-5">{{ data.companyProduct4Info1 }}</div>
-        <div class="text-2xl mb-4">{{ data.companyProduct4Info2 }}</div>
-        <div class="text-2xl mb-4">{{ data.companyProduct4Info3 }}</div>
-        <div class="text-2xl mb-4">{{ data.companyProduct4Info4 }}</div>
-        <div class="text-2xl mb-4">{{ data.companyProduct4Info5 }}</div>
-        <div class="text-2xl mb-4">{{ data.companyProduct4Info6 }}</div> 
-
-        <div class="text-3xl font-bold mb-4">{{ data.companyProduct5Name }}</div>
-        <img :src="data.companyProductImg5" class="w-full m-auto border-round-xl"> 
-        <div class="text-2xl mb-4 mt-5">{{ data.companyProduct5Info1 }}</div>
-        <div class="text-2xl mb-4">{{ data.companyProduct5Info2 }}</div>
-        <div class="text-2xl mb-4">{{ data.companyProduct5Info3 }}</div>
-        <div class="text-2xl mb-4">{{ data.companyProduct5Info4 }}</div>
-        <div class="text-2xl mb-4">{{ data.companyProduct5Info5 }}</div>
-        <div class="text-2xl mb-4">{{ data.companyProduct5Info6 }}</div>
-
-        <div class="text-3xl font-bold mb-4">{{ data.companyProduct6Name }}</div>
-        <img :src="data.companyProductImg6" class="w-full m-auto border-round-xl"> 
-        <div class="text-2xl mb-4 mt-5">{{ data.companyProduct6Info1 }}</div> 
-        <div class="text-2xl mb-4">{{ data.companyProduct6Info2 }}</div>
-        <div class="text-2xl mb-4">{{ data.companyProduct6Info3 }}</div> 
-        <div class="text-2xl mb-4">{{ data.companyProduct6Info4 }}</div> 
-        <div class="text-2xl mb-4">{{ data.companyProduct6Info5 }}</div> 
-        <div class="text-2xl mb-4">{{ data.companyProduct6Info6 }}</div> 
-
-        <div class="text-3xl font-bold mb-4">{{ data.companyProduct7Name }}</div>
-        <img :src="data.companyProductImg7" class="w-full m-auto border-round-xl"> 
-        <div class="text-2xl mb-4 mt-5">{{ data.companyProduct7Info1 }}</div> 
-        <div class="text-2xl mb-4">{{ data.companyProduct7Info2 }}</div>
-        <div class="text-2xl mb-4">{{ data.companyProduct7Info3 }}</div>
-        <div class="text-2xl mb-4">{{ data.companyProduct7Info4 }}</div>
-        <div class="text-2xl mb-4">{{ data.companyProduct7Info5 }}</div>
-        <div class="text-2xl mb-4">{{ data.companyProduct7Info6 }}</div>
-
-        <div class="text-3xl font-bold mb-4">{{ data.companyProduct8Name }}</div>
-        <img :src="data.companyProductImg8" class="w-full m-auto border-round-xl"> 
-        <div class="text-2xl mb-4 mt-5">{{ data.companyProduct8Info1 }}</div>
-        <div class="text-2xl mb-4">{{ data.companyProduct8Info2 }}</div> 
-        <div class="text-2xl mb-4">{{ data.companyProduct8Info3 }}</div> 
-        <div class="text-2xl mb-4">{{ data.companyProduct8Info4 }}</div> 
-        <div class="text-2xl mb-4">{{ data.companyProduct8Info5 }}</div> 
-        <div class="text-2xl mb-4">{{ data.companyProduct8Info6 }}</div>  
-
-        <div class="text-3xl font-bold mb-4">{{ data.companyProduct9Name }}</div>
-        <img :src="data.companyProductImg9" class="w-full m-auto border-round-xl"> 
-        <div class="text-2xl mb-4 mt-5">{{ data.companyProduct9Info1 }}</div>
-        <div class="text-2xl mb-4">{{ data.companyProduct9Info2 }}</div> 
-        <div class="text-2xl mb-4">{{ data.companyProduct9Info3 }}</div> 
-        <div class="text-2xl mb-4">{{ data.companyProduct9Info4 }}</div> 
-        <div class="text-2xl mb-4">{{ data.companyProduct9Info5 }}</div> 
-        <div class="text-2xl mb-4">{{ data.companyProduct9Info6 }}</div> 
-
-        <div class="text-3xl font-bold mb-4">{{ data.companyProduct10Name }}</div>
-        <img :src="data.companyProductImg10" class="w-full m-auto border-round-xl"> 
-        <div class="text-2xl mb-4 mt-5">{{ data.companyProduct10Info1 }}</div>
-        <div class="text-2xl mb-4">{{ data.companyProduct10Info2 }}</div>
-        <div class="text-2xl mb-4">{{ data.companyProduct10Info3 }}</div>
-        <div class="text-2xl mb-4">{{ data.companyProduct10Info4 }}</div>
-        <div class="text-2xl mb-4">{{ data.companyProduct10Info5 }}</div>
-        <div class="text-2xl mb-4">{{ data.companyProduct10Info6 }}</div> 
-
-        <div class="m-auto"> 
+        <div class="m-auto" v-if="data.companyMarketingTransation1"> 
             <p class=" text-center text-4xl font-bold mb-4">Company Marketing</p>
             <img :src="data.companyMarketingOverAllImage" class="w-full m-auto border-round-xl mb-4">
-            <div class="text-2xl mb-4">{{ data.companyMarketingIntro }}</div>
+
+            <div class="text-3xl font-bold mb-4">{{ data.companyMarketingTransation1 }}</div>
+            <div class="text-2xl mb-4">{{ data.companyMarketing1 }}</div>
+            <div class="text-2xl mb-4">{{ data.companyMarketing12 }}</div>
+            <div class="text-2xl mb-4">{{ data.companyMarketing13 }}</div>
+            <div class="text-2xl mb-4">{{ data.companyMarketing14 }}</div>
+            <div class="text-2xl mb-4">{{ data.companyMarketing15 }}</div>
+            <div class="text-2xl mb-4">{{ data.companyMarketing16 }}</div>
+            <div class="text-2xl mb-4">{{ data.companyMarketing17 }}</div>
+            <div class="text-2xl mb-4">{{ data.companyMarketing18 }}</div>
+            <div class="text-2xl mb-4">{{ data.companyMarketing19 }}</div>
+            <div class="text-2xl mb-4">{{ data.companyMarketing110 }}</div>
+            <div class="text-2xl mb-4">{{ data.companyMarketing111 }}</div>
+            <div class="text-2xl mb-4">{{ data.companyMarketing112 }}</div>
+
+            <div class="text-3xl font-bold mb-4">{{ data.companyMarketingTransation2 }}</div>
+            <div class="text-2xl mb-4">{{ data.companyMarketing2 }}</div>
+            <div class="text-2xl mb-4">{{ data.companyMarketing22 }}</div>
+            <div class="text-2xl mb-4">{{ data.companyMarketing23 }}</div>
+            <div class="text-2xl mb-4">{{ data.companyMarketing24 }}</div>
+            <div class="text-2xl mb-4">{{ data.companyMarketing25 }}</div>
+            <div class="text-2xl mb-4">{{ data.companyMarketing26 }}</div>
+            <div class="text-2xl mb-4">{{ data.companyMarketing27 }}</div>
+            <div class="text-2xl mb-4">{{ data.companyMarketing28 }}</div>
+            <div class="text-2xl mb-4">{{ data.companyMarketing29 }}</div>
+            <div class="text-2xl mb-4">{{ data.companyMarketing210 }}</div>
+            <div class="text-2xl mb-4">{{ data.companyMarketing211 }}</div>
+            <div class="text-2xl mb-4">{{ data.companyMarketing212 }}</div>
+
+            <div class="text-3xl font-bold mb-4">{{ data.companyMarketingTransation3 }}</div>
+            <div class="text-2xl mb-4">{{ data.companyMarketing3 }}</div>
+            <div class="text-2xl mb-4">{{ data.companyMarketing32 }}</div>
+            <div class="text-2xl mb-4">{{ data.companyMarketing33 }}</div>
+            <div class="text-2xl mb-4">{{ data.companyMarketing34 }}</div>
+            <div class="text-2xl mb-4">{{ data.companyMarketing35 }}</div>
+            <div class="text-2xl mb-4">{{ data.companyMarketing36 }}</div>
+            <div class="text-2xl mb-4">{{ data.companyMarketing37 }}</div>
+            <div class="text-2xl mb-4">{{ data.companyMarketing38 }}</div>
+            <div class="text-2xl mb-4">{{ data.companyMarketing39 }}</div>
+            <div class="text-2xl mb-4">{{ data.companyMarketing310 }}</div>
+            <div class="text-2xl mb-4">{{ data.companyMarketing311 }}</div>
+            <div class="text-2xl mb-4">{{ data.companyMarketing312 }}</div>
+
+            <div class="text-3xl font-bold mb-4">{{ data.companyMarketingTransation4 }}</div>
+            <div class="text-2xl mb-4">{{ data.companyMarketing4 }}</div>
+            <div class="text-2xl mb-4">{{ data.companyMarketing42 }}</div>
+            <div class="text-2xl mb-4">{{ data.companyMarketing43 }}</div>
+            <div class="text-2xl mb-4">{{ data.companyMarketing44 }}</div>
+            <div class="text-2xl mb-4">{{ data.companyMarketing45 }}</div>
+            <div class="text-2xl mb-4">{{ data.companyMarketing46 }}</div>
+            <div class="text-2xl mb-4">{{ data.companyMarketing47 }}</div>
+            <div class="text-2xl mb-4">{{ data.companyMarketing48 }}</div>
+            <div class="text-2xl mb-4">{{ data.companyMarketing49 }}</div>
+            <div class="text-2xl mb-4">{{ data.companyMarketing410 }}</div>
+            <div class="text-2xl mb-4">{{ data.companyMarketing411 }}</div>
+            <div class="text-2xl mb-4">{{ data.companyMarketing412 }}</div>
+
+            <div class="text-3xl font-bold mb-4">{{ data.companyMarketingTransation4 }}</div>
+            <div class="text-2xl mb-4">{{ data.companyMarketing4 }}</div>
+            <div class="text-2xl mb-4">{{ data.companyMarketing42 }}</div>
+            <div class="text-2xl mb-4">{{ data.companyMarketing43 }}</div>
+            <div class="text-2xl mb-4">{{ data.companyMarketing44 }}</div>
+            <div class="text-2xl mb-4">{{ data.companyMarketing45 }}</div>
+            <div class="text-2xl mb-4">{{ data.companyMarketing46 }}</div>
+            <div class="text-2xl mb-4">{{ data.companyMarketing47 }}</div>
+            <div class="text-2xl mb-4">{{ data.companyMarketing48 }}</div>
+            <div class="text-2xl mb-4">{{ data.companyMarketing49 }}</div>
+            <div class="text-2xl mb-4">{{ data.companyMarketing410 }}</div>
+            <div class="text-2xl mb-4">{{ data.companyMarketing411 }}</div>
+            <div class="text-2xl mb-4">{{ data.companyMarketing412 }}</div>
+
+            <div class="text-3xl font-bold mb-4">{{ data.companyMarketingTransation4 }}</div>
+            <div class="text-2xl mb-4">{{ data.companyMarketing4 }}</div>
+            <div class="text-2xl mb-4">{{ data.companyMarketing42 }}</div>
+            <div class="text-2xl mb-4">{{ data.companyMarketing43 }}</div>
+            <div class="text-2xl mb-4">{{ data.companyMarketing44 }}</div>
+            <div class="text-2xl mb-4">{{ data.companyMarketing45 }}</div>
+            <div class="text-2xl mb-4">{{ data.companyMarketing46 }}</div>
+            <div class="text-2xl mb-4">{{ data.companyMarketing47 }}</div>
+            <div class="text-2xl mb-4">{{ data.companyMarketing48 }}</div>
+            <div class="text-2xl mb-4">{{ data.companyMarketing49 }}</div>
+            <div class="text-2xl mb-4">{{ data.companyMarketing410 }}</div>
+            <div class="text-2xl mb-4">{{ data.companyMarketing411 }}</div>
+            <div class="text-2xl mb-4">{{ data.companyMarketing412 }}</div>
+
+            <div class="text-3xl font-bold mb-4">{{ data.companyMarketingTransation4 }}</div>
+            <div class="text-2xl mb-4">{{ data.companyMarketing4 }}</div>
+            <div class="text-2xl mb-4">{{ data.companyMarketing42 }}</div>
+            <div class="text-2xl mb-4">{{ data.companyMarketing43 }}</div>
+            <div class="text-2xl mb-4">{{ data.companyMarketing44 }}</div>
+            <div class="text-2xl mb-4">{{ data.companyMarketing45 }}</div>
+            <div class="text-2xl mb-4">{{ data.companyMarketing46 }}</div>
+            <div class="text-2xl mb-4">{{ data.companyMarketing47 }}</div>
+            <div class="text-2xl mb-4">{{ data.companyMarketing48 }}</div>
+            <div class="text-2xl mb-4">{{ data.companyMarketing49 }}</div>
+            <div class="text-2xl mb-4">{{ data.companyMarketing410 }}</div>
+            <div class="text-2xl mb-4">{{ data.companyMarketing411 }}</div>
+            <div class="text-2xl mb-4">{{ data.companyMarketing412 }}</div>
+
+            <div class="text-3xl font-bold mb-4">{{ data.companyMarketingTransation4 }}</div>
+            <div class="text-2xl mb-4">{{ data.companyMarketing4 }}</div>
+            <div class="text-2xl mb-4">{{ data.companyMarketing42 }}</div>
+            <div class="text-2xl mb-4">{{ data.companyMarketing43 }}</div>
+            <div class="text-2xl mb-4">{{ data.companyMarketing44 }}</div>
+            <div class="text-2xl mb-4">{{ data.companyMarketing45 }}</div>
+            <div class="text-2xl mb-4">{{ data.companyMarketing46 }}</div>
+            <div class="text-2xl mb-4">{{ data.companyMarketing47 }}</div>
+            <div class="text-2xl mb-4">{{ data.companyMarketing48 }}</div>
+            <div class="text-2xl mb-4">{{ data.companyMarketing49 }}</div>
+            <div class="text-2xl mb-4">{{ data.companyMarketing410 }}</div>
+            <div class="text-2xl mb-4">{{ data.companyMarketing411 }}</div>
+            <div class="text-2xl mb-4">{{ data.companyMarketing412 }}</div>
+
+            <div class="text-3xl font-bold mb-4">{{ data.companyMarketingTransation4 }}</div>
+            <div class="text-2xl mb-4">{{ data.companyMarketing4 }}</div>
+            <div class="text-2xl mb-4">{{ data.companyMarketing42 }}</div>
+            <div class="text-2xl mb-4">{{ data.companyMarketing43 }}</div>
+            <div class="text-2xl mb-4">{{ data.companyMarketing44 }}</div>
+            <div class="text-2xl mb-4">{{ data.companyMarketing45 }}</div>
+            <div class="text-2xl mb-4">{{ data.companyMarketing46 }}</div>
+            <div class="text-2xl mb-4">{{ data.companyMarketing47 }}</div>
+            <div class="text-2xl mb-4">{{ data.companyMarketing48 }}</div>
+            <div class="text-2xl mb-4">{{ data.companyMarketing49 }}</div>
+            <div class="text-2xl mb-4">{{ data.companyMarketing410 }}</div>
+            <div class="text-2xl mb-4">{{ data.companyMarketing411 }}</div>
+            <div class="text-2xl mb-4">{{ data.companyMarketing412 }}</div>
+
+            <div class="text-3xl font-bold mb-4">{{ data.companyMarketingTransation4 }}</div>
+            <div class="text-2xl mb-4">{{ data.companyMarketing4 }}</div>
+            <div class="text-2xl mb-4">{{ data.companyMarketing42 }}</div>
+            <div class="text-2xl mb-4">{{ data.companyMarketing43 }}</div>
+            <div class="text-2xl mb-4">{{ data.companyMarketing44 }}</div>
+            <div class="text-2xl mb-4">{{ data.companyMarketing45 }}</div>
+            <div class="text-2xl mb-4">{{ data.companyMarketing46 }}</div>
+            <div class="text-2xl mb-4">{{ data.companyMarketing47 }}</div>
+            <div class="text-2xl mb-4">{{ data.companyMarketing48 }}</div>
+            <div class="text-2xl mb-4">{{ data.companyMarketing49 }}</div>
+            <div class="text-2xl mb-4">{{ data.companyMarketing410 }}</div>
+            <div class="text-2xl mb-4">{{ data.companyMarketing411 }}</div>
+            <div class="text-2xl mb-4">{{ data.companyMarketing412 }}</div>
+
+            <div class="text-3xl font-bold mb-4">{{ data.companyMarketingTransation4 }}</div>
+            <div class="text-2xl mb-4">{{ data.companyMarketing4 }}</div>
+            <div class="text-2xl mb-4">{{ data.companyMarketing42 }}</div>
+            <div class="text-2xl mb-4">{{ data.companyMarketing43 }}</div>
+            <div class="text-2xl mb-4">{{ data.companyMarketing44 }}</div>
+            <div class="text-2xl mb-4">{{ data.companyMarketing45 }}</div>
+            <div class="text-2xl mb-4">{{ data.companyMarketing46 }}</div>
+            <div class="text-2xl mb-4">{{ data.companyMarketing47 }}</div>
+            <div class="text-2xl mb-4">{{ data.companyMarketing48 }}</div>
+            <div class="text-2xl mb-4">{{ data.companyMarketing49 }}</div>
+            <div class="text-2xl mb-4">{{ data.companyMarketing410 }}</div>
+            <div class="text-2xl mb-4">{{ data.companyMarketing411 }}</div>
+            <div class="text-2xl mb-4">{{ data.companyMarketing412 }}</div>
+
+            <div class="text-3xl font-bold mb-4">{{ data.companyMarketingTransation4 }}</div>
+            <div class="text-2xl mb-4">{{ data.companyMarketing4 }}</div>
+            <div class="text-2xl mb-4">{{ data.companyMarketing42 }}</div>
+            <div class="text-2xl mb-4">{{ data.companyMarketing43 }}</div>
+            <div class="text-2xl mb-4">{{ data.companyMarketing44 }}</div>
+            <div class="text-2xl mb-4">{{ data.companyMarketing45 }}</div>
+            <div class="text-2xl mb-4">{{ data.companyMarketing46 }}</div>
+            <div class="text-2xl mb-4">{{ data.companyMarketing47 }}</div>
+            <div class="text-2xl mb-4">{{ data.companyMarketing48 }}</div>
+            <div class="text-2xl mb-4">{{ data.companyMarketing49 }}</div>
+            <div class="text-2xl mb-4">{{ data.companyMarketing410 }}</div>
+            <div class="text-2xl mb-4">{{ data.companyMarketing411 }}</div>
+            <div class="text-2xl mb-4">{{ data.companyMarketing412 }}</div>
+
+            <div class="text-3xl font-bold mb-4">{{ data.companyMarketingTransation5 }}</div>
+            <div class="text-2xl mb-4">{{ data.companyMarketing5 }}</div>
+            <div class="text-2xl mb-4">{{ data.companyMarketing52 }}</div>
+            <div class="text-2xl mb-4">{{ data.companyMarketing53 }}</div>
+            <div class="text-2xl mb-4">{{ data.companyMarketing54 }}</div>
+            <div class="text-2xl mb-4">{{ data.companyMarketing55 }}</div>
+            <div class="text-2xl mb-4">{{ data.companyMarketing56 }}</div>
+            <div class="text-2xl mb-4">{{ data.companyMarketing57 }}</div>
+            <div class="text-2xl mb-4">{{ data.companyMarketing58 }}</div>
+            <div class="text-2xl mb-4">{{ data.companyMarketing59 }}</div>
+            <div class="text-2xl mb-4">{{ data.companyMarketing510 }}</div>
+            <div class="text-2xl mb-4">{{ data.companyMarketing511 }}</div>
+            <div class="text-2xl mb-4">{{ data.companyMarketing512 }}</div>
+
+            <div class="text-3xl font-bold mb-4">{{ data.companyMarketingTransation5 }}</div>
+            <div class="text-2xl mb-4">{{ data.companyMarketing5 }}</div>
+            <div class="text-2xl mb-4">{{ data.companyMarketing52 }}</div>
+            <div class="text-2xl mb-4">{{ data.companyMarketing53 }}</div>
+            <div class="text-2xl mb-4">{{ data.companyMarketing54 }}</div>
+            <div class="text-2xl mb-4">{{ data.companyMarketing55 }}</div>
+            <div class="text-2xl mb-4">{{ data.companyMarketing56 }}</div>
+            <div class="text-2xl mb-4">{{ data.companyMarketing57 }}</div>
+            <div class="text-2xl mb-4">{{ data.companyMarketing58 }}</div>
+            <div class="text-2xl mb-4">{{ data.companyMarketing59 }}</div>
+            <div class="text-2xl mb-4">{{ data.companyMarketing510 }}</div>
+            <div class="text-2xl mb-4">{{ data.companyMarketing511 }}</div>
+            <div class="text-2xl mb-4">{{ data.companyMarketing512 }}</div>
+
+            <div class="text-3xl font-bold mb-4">{{ data.companyMarketingTransation6 }}</div>
+            <div class="text-2xl mb-4">{{ data.companyMarketing6 }}</div>
+            <div class="text-2xl mb-4">{{ data.companyMarketing62 }}</div>
+            <div class="text-2xl mb-4">{{ data.companyMarketing63 }}</div>
+            <div class="text-2xl mb-4">{{ data.companyMarketing64 }}</div>
+            <div class="text-2xl mb-4">{{ data.companyMarketing65 }}</div>
+            <div class="text-2xl mb-4">{{ data.companyMarketing66 }}</div>
+            <div class="text-2xl mb-4">{{ data.companyMarketing67 }}</div>
+            <div class="text-2xl mb-4">{{ data.companyMarketing68 }}</div>
+            <div class="text-2xl mb-4">{{ data.companyMarketing69 }}</div>
+            <div class="text-2xl mb-4">{{ data.companyMarketing610 }}</div>
+            <div class="text-2xl mb-4">{{ data.companyMarketing611 }}</div>
+            <div class="text-2xl mb-4">{{ data.companyMarketing612 }}</div>
+
+            <div class="text-3xl font-bold mb-4">{{ data.companyMarketingTransation7 }}</div>
+            <div class="text-2xl mb-4">{{ data.companyMarketing7 }}</div>
+            <div class="text-2xl mb-4">{{ data.companyMarketing72 }}</div>
+            <div class="text-2xl mb-4">{{ data.companyMarketing73 }}</div>
+            <div class="text-2xl mb-4">{{ data.companyMarketing74 }}</div>
+            <div class="text-2xl mb-4">{{ data.companyMarketing75 }}</div>
+            <div class="text-2xl mb-4">{{ data.companyMarketing76 }}</div>
+            <div class="text-2xl mb-4">{{ data.companyMarketing77 }}</div>
+            <div class="text-2xl mb-4">{{ data.companyMarketing78 }}</div>
+            <div class="text-2xl mb-4">{{ data.companyMarketing79 }}</div>
+            <div class="text-2xl mb-4">{{ data.companyMarketing710 }}</div>
+            <div class="text-2xl mb-4">{{ data.companyMarketing711 }}</div>
+            <div class="text-2xl mb-4">{{ data.companyMarketing712 }}</div>
+
+            <div class="text-3xl font-bold mb-4">{{ data.companyMarketingTransation8 }}</div>
+            <div class="text-2xl mb-4">{{ data.companyMarketing8 }}</div>
+            <div class="text-2xl mb-4">{{ data.companyMarketing82 }}</div>
+            <div class="text-2xl mb-4">{{ data.companyMarketing83 }}</div>
+            <div class="text-2xl mb-4">{{ data.companyMarketing84 }}</div>
+            <div class="text-2xl mb-4">{{ data.companyMarketing85 }}</div>
+            <div class="text-2xl mb-4">{{ data.companyMarketing86 }}</div>
+            <div class="text-2xl mb-4">{{ data.companyMarketing87 }}</div>
+            <div class="text-2xl mb-4">{{ data.companyMarketing88 }}</div>
+            <div class="text-2xl mb-4">{{ data.companyMarketing89 }}</div>
+            <div class="text-2xl mb-4">{{ data.companyMarketing810 }}</div>
+            <div class="text-2xl mb-4">{{ data.companyMarketing811 }}</div>
+            <div class="text-2xl mb-4">{{ data.companyMarketing812 }}</div>
+
+            <div class="text-3xl font-bold mb-4">{{ data.companyMarketingTransation9 }}</div>
+            <div class="text-2xl mb-4">{{ data.companyMarketing9 }}</div>
+            <div class="text-2xl mb-4">{{ data.companyMarketing92 }}</div>
+            <div class="text-2xl mb-4">{{ data.companyMarketing93 }}</div>
+            <div class="text-2xl mb-4">{{ data.companyMarketing94 }}</div>
+            <div class="text-2xl mb-4">{{ data.companyMarketing95 }}</div>
+            <div class="text-2xl mb-4">{{ data.companyMarketing96 }}</div>
+            <div class="text-2xl mb-4">{{ data.companyMarketing97 }}</div>
+            <div class="text-2xl mb-4">{{ data.companyMarketing98 }}</div>
+            <div class="text-2xl mb-4">{{ data.companyMarketing99 }}</div>
+            <div class="text-2xl mb-4">{{ data.companyMarketing910 }}</div>
+            <div class="text-2xl mb-4">{{ data.companyMarketing911 }}</div>
+            <div class="text-2xl mb-4">{{ data.companyMarketing912 }}</div>
+
+            <div class="text-3xl font-bold mb-4">{{ data.companyMarketingTransation10 }}</div>
+            <div class="text-2xl mb-4">{{ data.companyMarketing10 }}</div>
+            <div class="text-2xl mb-4">{{ data.companyMarketing101 }}</div>
+            <div class="text-2xl mb-4">{{ data.companyMarketing102 }}</div>
+            <div class="text-2xl mb-4">{{ data.companyMarketing103 }}</div>
+            <div class="text-2xl mb-4">{{ data.companyMarketing104 }}</div>
+            <div class="text-2xl mb-4">{{ data.companyMarketing105 }}</div>
+            <div class="text-2xl mb-4">{{ data.companyMarketing106 }}</div>
+            <div class="text-2xl mb-4">{{ data.companyMarketing107 }}</div>
+            <div class="text-2xl mb-4">{{ data.companyMarketing108 }}</div>
+            <div class="text-2xl mb-4">{{ data.companyMarketing109 }}</div>
+            <div class="text-2xl mb-4">{{ data.companyMarketing1010 }}</div>
+            <div class="text-2xl mb-4">{{ data.companyMarketing1011 }}</div>
         </div>
 
-        <div class="text-3xl font-bold mb-4">{{ data.companyMarketingTransation1 }}</div>
-        <div class="text-2xl mb-4">{{ data.companyMarketing1 }}</div>
-        <div class="text-2xl mb-4">{{ data.companyMarketing12 }}</div>
-        <div class="text-2xl mb-4">{{ data.companyMarketing13 }}</div>
-        <div class="text-2xl mb-4">{{ data.companyMarketing14 }}</div>
-        <div class="text-2xl mb-4">{{ data.companyMarketing15 }}</div>
-        <div class="text-2xl mb-4">{{ data.companyMarketing16 }}</div>
-        <div class="text-2xl mb-4">{{ data.companyMarketing17 }}</div>
-        <div class="text-2xl mb-4">{{ data.companyMarketing18 }}</div>
-        <div class="text-2xl mb-4">{{ data.companyMarketing19 }}</div>
-        <div class="text-2xl mb-4">{{ data.companyMarketing110 }}</div>
-        <div class="text-2xl mb-4">{{ data.companyMarketing111 }}</div>
-        <div class="text-2xl mb-4">{{ data.companyMarketing112 }}</div>
 
-
-        <div class="text-3xl font-bold mb-4">{{ data.companyMarketingTransation2 }}</div>
-        <div class="text-2xl mb-4">{{ data.companyMarketing2 }}</div>
-        <div class="text-2xl mb-4">{{ data.companyMarketing22 }}</div>
-        <div class="text-2xl mb-4">{{ data.companyMarketing23 }}</div>
-        <div class="text-2xl mb-4">{{ data.companyMarketing24 }}</div>
-        <div class="text-2xl mb-4">{{ data.companyMarketing25 }}</div>
-        <div class="text-2xl mb-4">{{ data.companyMarketing26 }}</div>
-        <div class="text-2xl mb-4">{{ data.companyMarketing27 }}</div>
-        <div class="text-2xl mb-4">{{ data.companyMarketing28 }}</div>
-        <div class="text-2xl mb-4">{{ data.companyMarketing29 }}</div>
-        <div class="text-2xl mb-4">{{ data.companyMarketing210 }}</div>
-        <div class="text-2xl mb-4">{{ data.companyMarketing211 }}</div>
-        <div class="text-2xl mb-4">{{ data.companyMarketing212 }}</div>
-
-        <div class="text-3xl font-bold mb-4">{{ data.companyMarketingTransation3 }}</div>
-        <div class="text-2xl mb-4">{{ data.companyMarketing3 }}</div>
-        <div class="text-2xl mb-4">{{ data.companyMarketing32 }}</div>
-        <div class="text-2xl mb-4">{{ data.companyMarketing33 }}</div>
-        <div class="text-2xl mb-4">{{ data.companyMarketing34 }}</div>
-        <div class="text-2xl mb-4">{{ data.companyMarketing35 }}</div>
-        <div class="text-2xl mb-4">{{ data.companyMarketing36 }}</div>
-        <div class="text-2xl mb-4">{{ data.companyMarketing37 }}</div>
-        <div class="text-2xl mb-4">{{ data.companyMarketing38 }}</div>
-        <div class="text-2xl mb-4">{{ data.companyMarketing39 }}</div>
-        <div class="text-2xl mb-4">{{ data.companyMarketing310 }}</div>
-        <div class="text-2xl mb-4">{{ data.companyMarketing311 }}</div>
-        <div class="text-2xl mb-4">{{ data.companyMarketing312 }}</div>
-
-        <div class="text-3xl font-bold mb-4">{{ data.companyMarketingTransation4 }}</div>
-        <div class="text-2xl mb-4">{{ data.companyMarketing4 }}</div>
-        <div class="text-2xl mb-4">{{ data.companyMarketing42 }}</div>
-        <div class="text-2xl mb-4">{{ data.companyMarketing43 }}</div>
-        <div class="text-2xl mb-4">{{ data.companyMarketing44 }}</div>
-        <div class="text-2xl mb-4">{{ data.companyMarketing45 }}</div>
-        <div class="text-2xl mb-4">{{ data.companyMarketing46 }}</div>
-        <div class="text-2xl mb-4">{{ data.companyMarketing47 }}</div>
-        <div class="text-2xl mb-4">{{ data.companyMarketing48 }}</div>
-        <div class="text-2xl mb-4">{{ data.companyMarketing49 }}</div>
-        <div class="text-2xl mb-4">{{ data.companyMarketing410 }}</div>
-        <div class="text-2xl mb-4">{{ data.companyMarketing411 }}</div>
-        <div class="text-2xl mb-4">{{ data.companyMarketing412 }}</div>
-
-        <div class="text-3xl font-bold mb-4">{{ data.companyMarketingTransation5 }}</div>
-        <div class="text-2xl mb-4">{{ data.companyMarketing5 }}</div>
-        <div class="text-2xl mb-4">{{ data.companyMarketing52 }}</div>
-        <div class="text-2xl mb-4">{{ data.companyMarketing53 }}</div>
-        <div class="text-2xl mb-4">{{ data.companyMarketing54 }}</div>
-        <div class="text-2xl mb-4">{{ data.companyMarketing55 }}</div>
-        <div class="text-2xl mb-4">{{ data.companyMarketing56 }}</div>
-        <div class="text-2xl mb-4">{{ data.companyMarketing57 }}</div>
-        <div class="text-2xl mb-4">{{ data.companyMarketing58 }}</div>
-        <div class="text-2xl mb-4">{{ data.companyMarketing59 }}</div>
-        <div class="text-2xl mb-4">{{ data.companyMarketing510 }}</div>
-        <div class="text-2xl mb-4">{{ data.companyMarketing511 }}</div>
-        <div class="text-2xl mb-4">{{ data.companyMarketing512 }}</div>
-
-        <div class="text-3xl font-bold mb-4">{{ data.companyMarketingTransation6 }}</div>
-        <div class="text-2xl mb-4">{{ data.companyMarketing6 }}</div>
-        <div class="text-2xl mb-4">{{ data.companyMarketing62 }}</div>
-        <div class="text-2xl mb-4">{{ data.companyMarketing63 }}</div>
-        <div class="text-2xl mb-4">{{ data.companyMarketing64 }}</div>
-        <div class="text-2xl mb-4">{{ data.companyMarketing65 }}</div>
-        <div class="text-2xl mb-4">{{ data.companyMarketing66 }}</div>
-        <div class="text-2xl mb-4">{{ data.companyMarketing67 }}</div>
-        <div class="text-2xl mb-4">{{ data.companyMarketing68 }}</div>
-        <div class="text-2xl mb-4">{{ data.companyMarketing69 }}</div>
-        <div class="text-2xl mb-4">{{ data.companyMarketing610 }}</div>
-        <div class="text-2xl mb-4">{{ data.companyMarketing611 }}</div>
-        <div class="text-2xl mb-4">{{ data.companyMarketing612 }}</div>
-
-        <div class="text-3xl font-bold mb-4">{{ data.companyMarketingTransation7 }}</div>
-        <div class="text-2xl mb-4">{{ data.companyMarketing7 }}</div>
-        <div class="text-2xl mb-4">{{ data.companyMarketing72 }}</div>
-        <div class="text-2xl mb-4">{{ data.companyMarketing73 }}</div>
-        <div class="text-2xl mb-4">{{ data.companyMarketing74 }}</div>
-        <div class="text-2xl mb-4">{{ data.companyMarketing75 }}</div>
-        <div class="text-2xl mb-4">{{ data.companyMarketing76 }}</div>
-        <div class="text-2xl mb-4">{{ data.companyMarketing77 }}</div>
-        <div class="text-2xl mb-4">{{ data.companyMarketing78 }}</div>
-        <div class="text-2xl mb-4">{{ data.companyMarketing79 }}</div>
-        <div class="text-2xl mb-4">{{ data.companyMarketing710 }}</div>
-        <div class="text-2xl mb-4">{{ data.companyMarketing711 }}</div>
-        <div class="text-2xl mb-4">{{ data.companyMarketing712 }}</div>
-
-        <div class="text-3xl font-bold mb-4">{{ data.companyMarketingTransation8 }}</div>
-        <div class="text-2xl mb-4">{{ data.companyMarketing8 }}</div>
-        <div class="text-2xl mb-4">{{ data.companyMarketing82 }}</div>
-        <div class="text-2xl mb-4">{{ data.companyMarketing83 }}</div>
-        <div class="text-2xl mb-4">{{ data.companyMarketing84 }}</div>
-        <div class="text-2xl mb-4">{{ data.companyMarketing85 }}</div>
-        <div class="text-2xl mb-4">{{ data.companyMarketing86 }}</div>
-        <div class="text-2xl mb-4">{{ data.companyMarketing87 }}</div>
-        <div class="text-2xl mb-4">{{ data.companyMarketing88 }}</div>
-        <div class="text-2xl mb-4">{{ data.companyMarketing89 }}</div>
-        <div class="text-2xl mb-4">{{ data.companyMarketing810 }}</div>
-        <div class="text-2xl mb-4">{{ data.companyMarketing811 }}</div>
-        <div class="text-2xl mb-4">{{ data.companyMarketing812 }}</div>
-
-        <div class="text-3xl font-bold mb-4">{{ data.companyMarketingTransation9 }}</div>
-        <div class="text-2xl mb-4">{{ data.companyMarketing9 }}</div>
-        <div class="text-2xl mb-4">{{ data.companyMarketing92 }}</div>
-        <div class="text-2xl mb-4">{{ data.companyMarketing93 }}</div>
-        <div class="text-2xl mb-4">{{ data.companyMarketing94 }}</div>
-        <div class="text-2xl mb-4">{{ data.companyMarketing95 }}</div>
-        <div class="text-2xl mb-4">{{ data.companyMarketing96 }}</div>
-        <div class="text-2xl mb-4">{{ data.companyMarketing97 }}</div>
-        <div class="text-2xl mb-4">{{ data.companyMarketing98 }}</div>
-        <div class="text-2xl mb-4">{{ data.companyMarketing99 }}</div>
-        <div class="text-2xl mb-4">{{ data.companyMarketing910 }}</div>
-        <div class="text-2xl mb-4">{{ data.companyMarketing911 }}</div>
-        <div class="text-2xl mb-4">{{ data.companyMarketing912 }}</div>
-
-        <div class="text-3xl font-bold mb-4">{{ data.companyMarketingTransation10 }}</div>
-        <div class="text-2xl mb-4">{{ data.companyMarketing10 }}</div>
-        <div class="text-2xl mb-4">{{ data.companyMarketing101 }}</div>
-        <div class="text-2xl mb-4">{{ data.companyMarketing102 }}</div>
-        <div class="text-2xl mb-4">{{ data.companyMarketing103 }}</div>
-        <div class="text-2xl mb-4">{{ data.companyMarketing104 }}</div>
-        <div class="text-2xl mb-4">{{ data.companyMarketing105 }}</div>
-        <div class="text-2xl mb-4">{{ data.companyMarketing106 }}</div>
-        <div class="text-2xl mb-4">{{ data.companyMarketing107 }}</div>
-        <div class="text-2xl mb-4">{{ data.companyMarketing108 }}</div>
-        <div class="text-2xl mb-4">{{ data.companyMarketing109 }}</div>
-        <div class="text-2xl mb-4">{{ data.companyMarketing1010 }}</div>
-        <div class="text-2xl mb-4">{{ data.companyMarketing1011 }}</div>
-
-        <div class="m-auto"> 
+        <div class="m-auto" v-if="data.companyCorporateTransation1"> 
             <p class=" text-center text-4xl font-bold mb-4">Company Corporate affairs</p>
             <img :src="data.companyCorporateOverAllImage" class="w-full m-auto border-round-xl mb-4">
-            <div class="text-2xl mb-4">{{ data.companyCorporateIntro }}</div>
-        </div>
 
-        <div class="text-3xl font-bold mb-4">{{ data.companyCorporateTransation1 }}</div>
+            <div class="text-3xl font-bold mb-4">{{ data.companyCorporateTransation1 }}</div>
         <div class="text-2xl mb-4">{{ data.companyCorporate1 }}</div>
         <div class="text-2xl mb-4">{{ data.companyCorporate12 }}</div>
         <div class="text-2xl mb-4">{{ data.companyCorporate13 }}</div>
@@ -584,6 +673,10 @@ const data = store.datas.find(d => d.id === parseInt(route.params.id));
         <div class="text-2xl mb-4">{{ data.companyCorporate109 }}</div>
         <div class="text-2xl mb-4">{{ data.companyCorporate1010 }}</div>
         <div class="text-2xl mb-4">{{ data.companyCorporate1011 }}</div>
+
+        </div>
+
+        
 
         <div class="m-auto"> 
             <p class=" text-center text-4xl font-bold mb-4">Company Finance</p>

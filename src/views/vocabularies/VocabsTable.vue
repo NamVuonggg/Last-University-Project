@@ -18,7 +18,7 @@ const contentData = data.content.map(entry => ({
             <div><img :src= "data.image" width="50px"></div>
         </div>
         <div>
-            <DataTable :value="contentData" stripedRows showGridlines tableStyle="min-width: 50rem">
+            <DataTable paginator :rows="7" :value="contentData" stripedRows showGridlines tableStyle="min-width: 50rem">
                 <Column field="word" header="WORD"></Column>
                 <Column field="mean" header="MEANING"></Column>
             </DataTable>

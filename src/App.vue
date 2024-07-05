@@ -8,7 +8,6 @@ import { RouterView } from 'vue-router';
     <SubNavBar />
     <RouterView/>
     <div class="h-20rem"></div>
-    <Footer />
   </div>
 </template>
 
