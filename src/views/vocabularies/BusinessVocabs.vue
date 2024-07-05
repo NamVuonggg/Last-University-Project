@@ -14,14 +14,13 @@ const store = useVocabListStore();
         <div class="h-5rem"></div>
         <div class="grid">
             <RouterLink :to="`/topics/vocabs/${vocab.id}`" v-for="vocab in store.vocabs" :key="vocab.id" class="col-12 md:col-6 xl:col-4" style="text-decoration: none; color: inherit;">
-                <Button class="w-full p-5 flex align-items-center justify-content-between">
+                <Button class="w-full p-5 flex align-items-center justify-content-between bg-white border-2 border-gray-900 text-gray-900 hover:bg-red-400 hover:text-cyan-50">
                     <span>{{ vocab.name }}</span>
                     <i class="pi pi-angle-right" style="font-size: 1rem"></i>
                 </Button>
             </RouterLink>
         </div>
     </div>
-    <ScrollTop />
 </template>
 
 

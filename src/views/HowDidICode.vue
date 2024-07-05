@@ -102,7 +102,6 @@
             <img src="https://codezine.jp/static/images/article/18727/og.png" class="border-round-xl mt-5" width="100%" alt="">
             <span class="mt-5 text-xl">You can checkout this link to know more about what Pinia can do with it's power : <a href="https://pinia.vuejs.org/" target="_blank" style = "text-decoration: none;">Pinia</a></span>
         </div>
-        <ScrollTop />
         <div class="h-10rem"></div>
     </div>
 </template>

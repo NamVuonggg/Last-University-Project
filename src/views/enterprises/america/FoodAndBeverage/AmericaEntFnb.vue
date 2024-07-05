@@ -1,7 +1,7 @@
 <script setup>
-import { useEntTechDataStore } from "@/stores/america-ent-tech-data";
+import { useEntFnbDataStore } from "@/stores/america-ent-fnb-data"
 
-const store = useEntTechDataStore(); 
+const store = useEntFnbDataStore();
 </script>
 
 <template>

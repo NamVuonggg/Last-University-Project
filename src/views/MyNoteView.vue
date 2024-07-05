@@ -9,7 +9,7 @@ const showImportant = ref(false);
 
 <template>
     <div class="h-5rem"></div>
-    <Toast />
+    <Toast class="mt-6"/>
     <div class="container">
         <div class="flex align-items-center gap-3">
             <Button @click="store.activeNoteModal" class="mb-5">+ Add task</Button>

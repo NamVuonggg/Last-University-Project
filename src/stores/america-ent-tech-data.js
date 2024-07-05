@@ -1,11 +1,12 @@
 import { defineStore } from 'pinia'
 import { reactive } from 'vue'
 
-export const useEntDataStore = defineStore('us-data', () => {
+export const useEntTechDataStore = defineStore('us-tech-data', () => {
     const datas = reactive([
         {
             "id": 1,
             "name": "Apple",
+            "companyLogo": "https://cdn-icons-png.flaticon.com/128/0/747.png",
             "companyImg": "https://apple-store.ifuture.co.in/wp-content/uploads/2022/05/About-Apple-Logo.jpg",
             "companyIntro1": "Apple Inc. is an American multinational corporation and technology company headquartered in Cupertino, California, in Silicon Valley. It designs, develops, and sells consumer electronics, computer software, and online services. Devices include the iPhone, iPad, Mac, Apple Watch, Vision Pro, and Apple TV; operating systems include iOS, iPadOS, macOS, watchOS, tvOS, and visionOS; and software applications and services include iTunes, iCloud, Apple Music, and Apple TV+.",
             "companyIntro2": "Since 2011, Apple has been the world's largest company by market capitalization except when Microsoft held the position between January and June 2024. In 2022, Apple was the largest technology company by revenue, with US$394.3 billion. As of 2023, Apple was the fourth-largest personal computer vendor by unit sales, the largest manufacturing company by revenue, and the largest vendor of mobile phones in the world. It is one of the Big Five American information technology companies, alongside Alphabet (the parent company of Google), Amazon, Meta (the parent company of Facebook), and Microsoft.",
@@ -133,26 +134,31 @@ export const useEntDataStore = defineStore('us-data', () => {
         {
             "id": 2,
             "name": "Oracle",
+            "companyLogo": "https://cdn-icons-png.flaticon.com/128/5969/5969223.png",
             "companyImg": "https://assets.bwbx.io/images/users/iqjWHBFdfxIU/iKawEqCPyJhk/v1/-1x-1.jpg" // Oracle
         },
         {
             "id": 3,
             "name": "Microsoft",
+            "companyLogo": "https://cdn-icons-png.flaticon.com/128/732/732221.png",
             "companyImg": "https://i.pinimg.com/736x/a9/3a/a1/a93aa1092b969c05e47cb2f947368e6f.jpg" // Microsoft
         },
         {
             "id": 4,
             "name": "Tesla",
+            "companyLogo": "https://cdn-icons-png.flaticon.com/128/13861/13861163.png",
             "companyImg": "https://techmonitor.ai/wp-content/uploads/sites/4/2017/03/shutterstock_1140629366.webp" // Tesla
         },
         {
             "id": 5,
             "name": "Meta",
+            "companyLogo": "https://cdn-icons-png.flaticon.com/128/6033/6033716.png",
             "companyImg": "https://www.investopedia.com/thmb/kcFOkUztiPsKpASAgZuolyM-19g=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/shutterstock_2113535186-750x406-5a8cb0db05f441deb12ea8d8c726a2c5.jpg" // Meta
         },
         {
             "id": 6,
             "name": "OpenAI",
+            "companyLogo": "https://cdn-icons-png.flaticon.com/128/11865/11865326.png",
             "companyImg": "https://coingeek.com/wp-content/uploads/2023/09/OpenAI-1-jpg.webp", // Aplle
             "companyIntro" : "OpenAI is an American artificial intelligence (AI) research organization founded in December 2015 and headquartered in San Francisco. Its mission is to develop 'safe and beneficial' artificial general intelligence, which it defines as 'highly autonomous systems that outperform humans at most economically valuable work'. As a leading organization in the ongoing AI boom, OpenAI has developed several large language models, advanced image generation models, and previously, released open-source models. Its release of ChatGPT has been credited with catalyzing widespread interest in AI.",
             "companyIntro2" : "The organization consists of the non-profit OpenAI, Inc. registered in Delaware and its for-profit subsidiary OpenAI Global, LLC. Microsoft owns roughly 49% of OpenAI's equity, having invested US$13 billion. It also provides computing resources to OpenAI through its Microsoft Azure cloud platform. In 2023 and 2024, OpenAI faced multiple lawsuits for alleged copyright infringement against authors and media companies whose work was used to train some of OpenAI's products. In November 2023, OpenAI's board removed Sam Altman as CEO citing a lack of confidence in him, and then reinstated him five days later after negotiations resulting in a reconstructed board.",
@@ -186,6 +192,12 @@ export const useEntDataStore = defineStore('us-data', () => {
             "companyMarketingName" : "Marketing",
             "companyMarketingImg" : "https://www.tailorbrands.com/wp-content/uploads/2021/01/apple-evolution-thumbnail.jpg",
             "companyMarketing" : "According to Steve Jobs, the company's name was inspired by his visit to an apple farm while on a fruitarian diet. Jobs thought the name 'Apple' was 'fun, spirited and not intimidating'. Steve Jobs and Steve Wozniak were fans of the Beatles, but Apple Inc. had name and logo trademark issues with Apple Corps Ltd., a multimedia company started by the Beatles in 1968. This resulted in a series of lawsuits and tension between the two companies. These issues ended when they settled their lawsuit in 2007. Apple's first logo, designed by Ron Wayne, depicts Sir Isaac Newton sitting under an apple tree. It was almost immediately replaced by Rob Janoff's 'rainbow Apple', the now-familiar rainbow-colored silhouette of an apple with a bite taken out of it. On August 27, 1999,  Apple officially dropped the rainbow scheme and began to use monochromatic logos nearly identical in shape to the previous rainbow incarnation. Apple evangelists were actively engaged by the company at one time, but this was after the phenomenon had already been firmly established. Apple evangelist Guy Kawasaki has called the brand fanaticism 'something that was stumbled upon,' while Ive claimed in 2014 that 'people have an incredibly personal relationship' with Apple's products. Fortune magazine named Apple the most admired company in the United States in 2008, and in the world from 2008 to 2012. On September 30, 2013, Apple surpassed Coca-Cola to become the world's most valuable brand in the Omnicom Group's 'Best Global Brands' report.  Boston Consulting Group has ranked Apple as the world's most innovative brand every year as of 2005. As of January 2021, 1.65 billion Apple products were in active use. In February 2023, that number exceeded 2 billion devices. "
+        },
+        {
+            "id": 7,
+            "name": "Amazon",
+            "companyLogo": "https://cdn-icons-png.flaticon.com/128/16021/16021158.png",
+            "companyImg": "https://cloudfront-us-east-2.images.arcpublishing.com/reuters/U63WLCQLRBJABNLUMJKJ4TXKE4.jpg" // Meta
         },
         
     ])

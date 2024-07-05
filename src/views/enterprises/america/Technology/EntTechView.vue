@@ -1,7 +1,7 @@
 <script setup>
 import { useRoute } from "vue-router";
-import { useEntDataStore } from "@/stores/america-ent-data";
-const store = useEntDataStore();
+import { useEntTechDataStore } from "@/stores/america-ent-tech-data";
+const store = useEntTechDataStore();
 
 import { useNoteStore } from '@/stores/noteview';
 import AddNoteModal from "@/components/AddNote/AddNoteModal.vue";
@@ -12,12 +12,12 @@ const data = store.datas.find(d => d.id === parseInt(route.params.id));
 
 <template>
     <div class="h-5rem"></div>
-    <Toast />
+    <Toast class="mt-6" />
     <AddNoteModal v-if="notestore.modalIsActive"/>
     <Button @click="notestore.activeNoteModal" class="fixed bottom-0 left-0 p-3">Take Note</Button>
     <div class="container m-auto">
         
-        <div class="text-center text-6xl font-bold">{{ data.name }}</div>
+        <div class="text-center text-7xl font-bold">{{ data.name }}</div>
             <div class="h-4rem"></div>
         <div>
             <img :src="data.companyImg" class="w-full m-auto border-round-xl">
@@ -824,8 +824,6 @@ const data = store.datas.find(d => d.id === parseInt(route.params.id));
         <div class="text-2xl mb-4">{{ data.companyFinance109 }}</div>
         <div class="text-2xl mb-4">{{ data.companyFinance1010 }}</div>
         <div class="text-2xl mb-4">{{ data.companyFinance1011 }}</div>
-        
-    <ScrollTop />
     </div>
 </template>
 

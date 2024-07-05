@@ -14,6 +14,7 @@ import BusinessVocabs from "../views/vocabularies/BusinessVocabs.vue";
 import ContactView from "@/views/ContactView.vue";
 import ContactPhone from "@/components/HomeView/ContactPhone.vue";
 import VocabsTable from "@/views/vocabularies/VocabsTable.vue";
+import AmericaEntFnb from "@/views/enterprises/america/FoodAndBeverage/AmericaEntFnb.vue"
 
 export const router = createRouter({
     history: createWebHistory(),
@@ -86,14 +87,19 @@ export const router = createRouter({
       component: JapanEntType
     },
     {
-      path:"/country/america/Technology",
+      path:"/country/america/Tech",
       name: "america-ent-tech",
       component: AmericaEntTech
     },
     {
-      path:"/country/america/Technology/:id",     
+      path:"/country/america/Tech/:id",     
       name: "ent-view",
       component: EntTechView,
+    },
+    {
+      path:"/country/america/FnB",
+      name: "america-ent-fnb",
+      component: AmericaEntFnb
     }
   ]
 });
