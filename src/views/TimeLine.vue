@@ -10,7 +10,6 @@ const events = ref([
 </script>
 
 <template>
-    <div class="h-5rem"></div>
     <div class="card">
         <Timeline :value="events" align="alternate" class="customized-timeline">
             <template #marker="slotProps">

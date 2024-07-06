@@ -2,7 +2,6 @@
 </script>
 
 <template>
-    <div class="h-15rem"></div>
     <div class="container">
         <div class="grid">
             <div class="col-12 md:col-6 xl:col-6 m-auto">

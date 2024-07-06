@@ -5,7 +5,6 @@ const store = useVocabListStore();
 </script>
 
 <template>
-    <div class="h-5rem"></div>
     <div class="container">
         <div>
             <div class="top-txt text-center font-bold text-6xl mb-4">The importance of <span class="text-red-500">business vocabularies</span></div>
@@ -27,7 +26,7 @@ const store = useVocabListStore();
 <style lang="scss" scoped>
 @import url('https://fonts.googleapis.com/css2?family=Lilita+One&family=Playwrite+NL:wght@100..400&family=Shadows+Into+Light&display=swap');
     .container{
-        padding: 0 20%;
+        padding: 0 15%;
 
         .top-txt{
             font-family: "Shadows Into Light";

@@ -3,7 +3,7 @@
 </script>
 
 <template>
-    <div class="container mt-7 flex flex-column">
+    <div class="container flex flex-column">
         <span class="top-txt font-bold text-6xl">HOW DID I CREATE <span class="text-red-500">THESIS ASSISTANT</span> ?</span>
 
         <div class="h-3rem"></div>

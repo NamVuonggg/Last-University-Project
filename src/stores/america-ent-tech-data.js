@@ -159,7 +159,7 @@ export const useEntTechDataStore = defineStore('us-tech-data', () => {
             "id": 6,
             "name": "OpenAI",
             "companyLogo": "https://cdn-icons-png.flaticon.com/128/11865/11865326.png",
-            "companyImg": "https://coingeek.com/wp-content/uploads/2023/09/OpenAI-1-jpg.webp", // Aplle
+            "companyImg": "https://coingeek.com/wp-content/uploads/2023/09/OpenAI-1-jpg.webp", // OpenAI
             "companyIntro" : "OpenAI is an American artificial intelligence (AI) research organization founded in December 2015 and headquartered in San Francisco. Its mission is to develop 'safe and beneficial' artificial general intelligence, which it defines as 'highly autonomous systems that outperform humans at most economically valuable work'. As a leading organization in the ongoing AI boom, OpenAI has developed several large language models, advanced image generation models, and previously, released open-source models. Its release of ChatGPT has been credited with catalyzing widespread interest in AI.",
             "companyIntro2" : "The organization consists of the non-profit OpenAI, Inc. registered in Delaware and its for-profit subsidiary OpenAI Global, LLC. Microsoft owns roughly 49% of OpenAI's equity, having invested US$13 billion. It also provides computing resources to OpenAI through its Microsoft Azure cloud platform. In 2023 and 2024, OpenAI faced multiple lawsuits for alleged copyright infringement against authors and media companies whose work was used to train some of OpenAI's products. In November 2023, OpenAI's board removed Sam Altman as CEO citing a lack of confidence in him, and then reinstated him five days later after negotiations resulting in a reconstructed board.",
             "companyIntro3" : "OpenAI's board has since added former US Treasury Secretary Lawrence Summers, former National Security Agency head Paul Nakasone, and a non-voting seat for Microsoft.",
@@ -197,7 +197,13 @@ export const useEntTechDataStore = defineStore('us-tech-data', () => {
             "id": 7,
             "name": "Amazon",
             "companyLogo": "https://cdn-icons-png.flaticon.com/128/16021/16021158.png",
-            "companyImg": "https://cloudfront-us-east-2.images.arcpublishing.com/reuters/U63WLCQLRBJABNLUMJKJ4TXKE4.jpg" // Meta
+            "companyImg": "https://cloudfront-us-east-2.images.arcpublishing.com/reuters/U63WLCQLRBJABNLUMJKJ4TXKE4.jpg" // Amazon
+        },
+        {
+            "id": 8,
+            "name": "Google",
+            "companyLogo": "https://cdn-icons-png.flaticon.com/128/281/281764.png",
+            "companyImg": "https://techmonitor.ai/wp-content/uploads/sites/4/2017/02/shutterstock_552493561.webp" // Google
         },
         
     ])

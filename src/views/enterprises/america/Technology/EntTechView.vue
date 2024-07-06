@@ -11,7 +11,6 @@ const data = store.datas.find(d => d.id === parseInt(route.params.id));
 </script>
 
 <template>
-    <div class="h-5rem"></div>
     <Toast class="mt-6" />
     <AddNoteModal v-if="notestore.modalIsActive"/>
     <Button @click="notestore.activeNoteModal" class="fixed bottom-0 left-0 p-3">Take Note</Button>

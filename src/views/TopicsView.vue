@@ -38,13 +38,15 @@
                     </RouterLink>
                 </div>
                 <div class="col-12 md:col-6 xl:col-4">
-                    <Button class="p-4 w-full border-round-xl flex justify-content-between bg-white border-2 border-gray-900 text-gray-900 hover:bg-red-400 hover:text-cyan-50">
-                        <div class="flex align-items-center">
-                            <img src="https://cdn-icons-png.flaticon.com/128/3135/3135692.png" width="45px" alt="">
-                            <span class="ml-5 font-bold">My CV</span>
-                        </div>
-                        <i class="pi pi-angle-right" style="font-size: 1rem"></i>
-                    </Button>
+                    <RouterLink to="/topics/cv" style="text-decoration: none; color: inherit;">
+                        <Button class="p-4 w-full border-round-xl flex justify-content-between bg-white border-2 border-gray-900 text-gray-900 hover:bg-red-400 hover:text-cyan-50">
+                            <div class="flex align-items-center">
+                                <img src="https://cdn-icons-png.flaticon.com/128/3135/3135692.png" width="45px" alt="">
+                                <span class="ml-5 font-bold">My CV</span>
+                            </div>
+                            <i class="pi pi-angle-right" style="font-size: 1rem"></i>
+                        </Button>
+                    </RouterLink>
                 </div>
                 <div class="col-12 md:col-6 xl:col-4">
                     <Button class="p-4 w-full border-round-xl flex justify-content-between bg-white border-2 border-gray-900 text-gray-900 hover:bg-red-400 hover:text-cyan-50">
@@ -70,7 +72,7 @@
 
 <style lang="scss" scoped>
     .container {
-        padding: 10% 15%;
+        padding: 0 15%;
     }
 
 </style>

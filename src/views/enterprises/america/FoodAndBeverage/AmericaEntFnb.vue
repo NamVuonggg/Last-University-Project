@@ -5,7 +5,6 @@ const store = useEntFnbDataStore();
 </script>
 
 <template>
-    <div class="h-6rem"></div>
     <div class="container">
         <RouterLink :to="`/country/america/Tech/${data.id}`" v-for="data in store.datas" :key="data.id" style="text-decoration: none; color:inherit;">
             <div class="w-full">

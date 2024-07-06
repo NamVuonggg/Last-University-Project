@@ -131,10 +131,39 @@ const store = useHomeStore();
                                     </li>
                                     </li>
                                     <li>
-                                        <a v-ripple class="flex align-items-center cursor-pointer p-3 border-round text-700 hover:surface-100 transition-duration-150 transition-colors p-ripple">
-                                            <i class="pi pi-calendar mr-2"></i>
-                                            <span class="font-medium">Calendar</span>
+                                        <a
+                                            v-ripple
+                                            v-styleclass="{
+                                                selector: '@next',
+                                                enterClass: 'hidden',
+                                                enterActiveClass: 'slidedown',
+                                                leaveToClass: 'hidden',
+                                                leaveActiveClass: 'slideup'
+                                            }"
+                                            class="flex align-items-center cursor-pointer p-3 border-round text-700 hover:surface-100 transition-duration-150 transition-colors p-ripple"
+                                        >
+                                            <i class="pi pi-envelope mr-2"></i>
+                                            <span class="font-medium">My CV</span>
+                                            <i class="pi pi-chevron-down ml-auto"></i>
                                         </a>
+                                        <ul class="list-none py-0 pl-3 pr-0 m-0 hidden overflow-y-hidden transition-all transition-duration-400 transition-ease-in-out">
+                                            <li>
+                                                <RouterLink to="/topics/cv/intern" style="text-decoration: none; color: inherit;" @click="closeCallback">
+                                                    <div v-ripple class="flex align-items-center cursor-pointer p-3 border-round text-700 hover:surface-100 transition-duration-150 transition-colors p-ripple">
+                                                        <img src="https://cdn-icons-png.flaticon.com/128/909/909212.png" width="20px" alt="">
+                                                        <span class="font-medium ml-3">Intern CV</span>
+                                                    </div>
+                                                </RouterLink>
+                                            </li>
+                                            <li>
+                                                <RouterLink to="" style="text-decoration: none; color: inherit;" @click="closeCallback">
+                                                    <div v-ripple class="flex align-items-center cursor-pointer p-3 border-round text-700 hover:surface-100 transition-duration-150 transition-colors p-ripple">
+                                                        <img src="https://cdn-icons-png.flaticon.com/128/2195/2195529.png" width="20px" alt="">
+                                                        <span class="font-medium ml-3">Job CV</span>
+                                                    </div>
+                                                </RouterLink>
+                                            </li>
+                                        </ul>
                                     </li>
                                     <li>
                                         <a v-ripple class="flex align-items-center cursor-pointer p-3 border-round text-700 hover:surface-100 transition-duration-150 transition-colors p-ripple">

@@ -7,9 +7,7 @@ const store = useNoteStore();
 </script>
 
 <template>
-    <div class="h-5rem"></div>
-    <div class="container">
-            
+    <div class="container">  
         <div class="flex flex-column align-items-center">
             <div class="flex flex-column gap-5">
                 <div>

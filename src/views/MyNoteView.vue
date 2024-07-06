@@ -8,7 +8,6 @@ const showImportant = ref(false);
 </script>
 
 <template>
-    <div class="h-5rem"></div>
     <Toast class="mt-6"/>
     <div class="container">
         <div class="flex align-items-center gap-3">

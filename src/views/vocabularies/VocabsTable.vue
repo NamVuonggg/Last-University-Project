@@ -11,7 +11,6 @@ const contentData = data.content.map(entry => ({
 </script>
 
 <template>
-    <div class="h-5rem"></div>
     <div class="container">
         <div class="flex gap-5 align-items-center justify-content-center mb-7">
             <div class="text-center text-3xl font-bold">{{ data.name }}</div>

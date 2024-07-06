@@ -6,10 +6,11 @@ import HeaderBarVue from '@/components/HeaderBar.vue';
 <template>
   <div class="container">
     <HeaderBarVue/>
-    <div class="h-10rem"></div>
+    <div class="h-15rem"></div>
     <RouterView/>
     <ScrollTop />
     <div class="h-20rem"></div>
+    <Footer />
   </div>
 </template>
 

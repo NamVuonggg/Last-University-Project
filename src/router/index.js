@@ -14,7 +14,9 @@ import BusinessVocabs from "../views/vocabularies/BusinessVocabs.vue";
 import ContactView from "@/views/ContactView.vue";
 import ContactPhone from "@/components/HomeView/ContactPhone.vue";
 import VocabsTable from "@/views/vocabularies/VocabsTable.vue";
-import AmericaEntFnb from "@/views/enterprises/america/FoodAndBeverage/AmericaEntFnb.vue"
+import AmericaEntFnb from "@/views/enterprises/america/FoodAndBeverage/AmericaEntFnb.vue";
+import MyCV from "@/views/cv/MyCV.vue";
+import CVintern from "@/views/cv/CV types/CVintern.vue";
 
 export const router = createRouter({
     history: createWebHistory(),
@@ -100,6 +102,16 @@ export const router = createRouter({
       path:"/country/america/FnB",
       name: "america-ent-fnb",
       component: AmericaEntFnb
+    },
+    {
+      path:"/topics/cv",
+      name:"my-cv",
+      component: MyCV,
+    },
+    {
+      path: "/topics/cv/intern",
+      name:"intern-cv",
+      component: CVintern,
     }
   ]
 });

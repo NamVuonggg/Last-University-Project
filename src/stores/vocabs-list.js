@@ -21,7 +21,7 @@ export const useVocabListStore = defineStore('vocabsList', () =>{
         },
         {
             id: 5,
-            name: "Finance and accounting vocabulary",
+            name: "Finance vocabulary",
         },
         {
             id: 6,
