@@ -13,7 +13,7 @@ const skill8 = ref(7);
 
 <template>
     <div class="container">
-        <div class="content-container card p-6 shadow-3 border-round-md">
+        <div class="content-container card p-6 shadow-4 border-round-md">
 
             <div class="top-header flex align-items-center gap-8">
                 <div class="border-2 border-green-500 p-1 border-circle">
