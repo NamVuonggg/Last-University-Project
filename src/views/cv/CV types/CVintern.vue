@@ -1,5 +1,14 @@
 <script setup>
-import { ref } from 'vue';
+import { use } from 'echarts/core';
+import { CanvasRenderer } from 'echarts/renderers';
+import { PieChart } from 'echarts/charts';
+import {
+  TitleComponent,
+  TooltipComponent,
+  LegendComponent,
+} from 'echarts/components';
+import VChart, { THEME_KEY } from 'vue-echarts';
+import { ref, provide } from 'vue';
 
 const skill1 = ref(7);
 const skill2 = ref(7);
@@ -9,6 +18,60 @@ const skill5 = ref(8);
 const skill6 = ref(8);
 const skill7 = ref(5);
 const skill8 = ref(7);
+
+
+use([
+  CanvasRenderer,
+  PieChart,
+  TitleComponent,
+  TooltipComponent,
+  LegendComponent,
+]);
+
+provide(THEME_KEY, 'light');
+
+
+const abilityChart = ref({
+  title: {
+    top: 50,
+    text: 'Personal Programming Specific Knowledge Analyst',
+    left: 'center',
+  },
+  tooltip: {
+    trigger: 'item',
+  },
+  legend: {
+    orient: 'vertical',
+    top: 130,
+    right: 40,
+    data: ['Python', 'MySQL', 'HTML', 'CSS', 'JavaScript', 'VueJS'],
+  },
+  series: [
+    {
+      type: 'pie',
+      radius: '55%',
+      center: ['50%', '60%'],
+      data: [
+        { value: 350, name: 'Python' },
+        { value: 250, name: 'MySQL' },
+        { value: 718, name: 'HTML' },
+        { value: 714, name: 'CSS' },
+        { value: 648, name: 'JavaScript' },
+        { value: 848, name: 'VueJS' },
+      ],
+      emphasis: {
+        itemStyle: {
+          shadowBlur: 10,
+          shadowOffsetX: 0,
+          shadowColor: 'rgba(0, 0, 0, 0.5)',
+        },
+      },
+    },
+  ],
+});
+
+
+
 </script>
 
 <template>
@@ -16,9 +79,9 @@ const skill8 = ref(7);
         <div class="content-container card p-6 shadow-4 border-round-md">
 
             <div class="top-header flex align-items-center gap-8">
-                <div class="border-2 border-green-500 p-1 border-circle">
-                    <div class="border-2 border-green-500 p-4 border-circle">
-                        <img src="https://cdn-icons-png.flaticon.com/128/9576/9576233.png" alt="">
+                <div class="border-3 border-green-500 p-2 border-circle">
+                    <div class="border-3 border-green-500 p-2 border-circle">
+                        <img src="https://cdn-icons-png.flaticon.com/128/4140/4140037.png" alt="">
                     </div>
                 </div>
                 <div class="header-name-des">
@@ -64,36 +127,92 @@ const skill8 = ref(7);
                     <div class="skill mt-5 flex flex-column gap-4">
                         <div class="font-bold text-xl text-green-500">SKILL</div>
                         <div class="skills-content flex flex-column gap-2">
-                            <div class="text-xl">Office 365</div>
-                            <Rating v-model="skill1" :cancel="false" :stars="10"/>
+                            <div class="text-md">Office 365</div>
+                            <Rating v-model="skill1" :stars="10" :cancel="false">
+                                <template #onicon>
+                                    <i class="pi pi-circle-on" style="font-size: 14px; color: orange;"></i>
+                                </template>
+                                <template #officon>
+                                    <i class="pi pi-circle-off" style="font-size: 14px"></i>
+                                </template>
+                            </Rating>
                         </div>
                         <div class="skills-content flex flex-column gap-2">
-                            <div class="text-xl">Logical thinking and creative</div>
-                            <Rating v-model="skill2" :cancel="false" :stars="10"/>
+                            <div class="text-md">Logical thinking and creative </div>
+                            <Rating v-model="skill2" :stars="10" :cancel="false">
+                                <template #onicon>
+                                    <i class="pi pi-circle-on" style="font-size: 14px; color: orange;"></i>
+                                </template>
+                                <template #officon>
+                                    <i class="pi pi-circle-off" style="font-size: 14px"></i>
+                                </template>
+                            </Rating>
                         </div>
                         <div class="skills-content flex flex-column gap-2">
-                            <div class="text-xl">Public Speaking</div>
-                            <Rating v-model="skill3" :cancel="false" :stars="10"/>
+                            <div class="text-md">Public Speaking</div>
+                            <Rating v-model="skill3" :stars="10" :cancel="false">
+                                <template #onicon>
+                                    <i class="pi pi-circle-on" style="font-size: 14px; color: orange;"></i>
+                                </template>
+                                <template #officon>
+                                    <i class="pi pi-circle-off" style="font-size: 14px"></i>
+                                </template>
+                            </Rating>
                         </div>
                         <div class="skills-content flex flex-column gap-2">
-                            <div class="text-xl">Japanese</div>
-                            <Rating v-model="skill4" :cancel="false" :stars="10"/>
+                            <div class="text-md">Japanese</div>
+                            <Rating v-model="skill4" :stars="10" :cancel="false">
+                                <template #onicon>
+                                    <i class="pi pi-circle-on" style="font-size: 14px; color: orange;"></i>
+                                </template>
+                                <template #officon>
+                                    <i class="pi pi-circle-off" style="font-size: 14px"></i>
+                                </template>
+                            </Rating>
                         </div>
                         <div class="skills-content flex flex-column gap-2">
-                            <div class="text-xl">English</div>
-                            <Rating v-model="skill5" :cancel="false" :stars="10"/>
+                            <div class="text-md">English</div>
+                            <Rating v-model="skill5" :stars="10" :cancel="false">
+                                <template #onicon>
+                                    <i class="pi pi-circle-on" style="font-size: 14px; color: orange;"></i>
+                                </template>
+                                <template #officon>
+                                    <i class="pi pi-circle-off" style="font-size: 14px"></i>
+                                </template>
+                            </Rating>
                         </div>
                         <div class="skills-content flex flex-column gap-2">
-                            <div class="text-xl">Web Develope</div>
-                            <Rating v-model="skill6" :cancel="false" :stars="10"/>
+                            <div class="text-md">Web Develope</div>
+                            <Rating v-model="skill6" :stars="10" :cancel="false">
+                                <template #onicon>
+                                    <i class="pi pi-circle-on" style="font-size: 14px; color: orange;"></i>
+                                </template>
+                                <template #officon>
+                                    <i class="pi pi-circle-off" style="font-size: 14px"></i>
+                                </template>
+                            </Rating>
                         </div>
                         <div class="skills-content flex flex-column gap-2">
-                            <div class="text-xl">Python</div>
-                            <Rating v-model="skill7" :cancel="false" :stars="10"/>
+                            <div class="text-md">Python</div>
+                            <Rating v-model="skill7" :stars="10" :cancel="false">
+                                <template #onicon>
+                                    <i class="pi pi-circle-on" style="font-size: 14px; color: orange;"></i>
+                                </template>
+                                <template #officon>
+                                    <i class="pi pi-circle-off" style="font-size: 14px"></i>
+                                </template>
+                            </Rating>
                         </div>
                         <div class="skills-content flex flex-column gap-2">
-                            <div class="text-xl">Digital Art Design</div>
-                            <Rating v-model="skill8" :cancel="false" :stars="10"/>
+                            <div class="text-md">Digital Art Design</div>
+                            <Rating v-model="skill8" :stars="10" :cancel="false">
+                                <template #onicon>
+                                    <i class="pi pi-circle-on" style="font-size: 14px; color: orange;"></i>
+                                </template>
+                                <template #officon>
+                                    <i class="pi pi-circle-off" style="font-size: 14px"></i>
+                                </template>
+                            </Rating>
                         </div>
                     </div>
 
@@ -122,11 +241,11 @@ const skill8 = ref(7);
                         </div>
                         <div class="w-full bg-gray-100 mt-2" style="height: 3px;"></div>
                         <div class="mt-4">
-                            <div class="edu-top-title flex align-items-center gap-2">
+                            <div class="edu-top-title flex align-items-center gap-3">
                                 <img src="https://cdn-icons-png.flaticon.com/128/2995/2995455.png" width="30px"> 
                                 <div class="flex align-items-center">
                                     <div class="font-bold text-xl w-20rem">JAPAN UNIVERSITY OF ECONOMICS (日本経済大学)</div>
-                                    <div class="text-xl" style="opacity: 0.4;">Period: April 2021 - May 2025</div>
+                                    <div class="text-md" style="opacity: 0.4;">Period: April 2021 - May 2025</div>
                                 </div>
                             </div>
                             <div class="edu-des">
@@ -212,6 +331,9 @@ const skill8 = ref(7);
                     </div>
                 </div>
             </div>
+            <div class="mt-6 flex">
+                <v-chart class="pie-chart" :option="abilityChart" />
+            </div>
         </div>
     </div>
 </template>
@@ -232,6 +354,14 @@ const skill8 = ref(7);
             border-top: 2px solid rgba(3, 182, 3, 0.24);
         }
 
+    }
+
+    .pie-chart {
+        height: 80vh;
+    }
+
+    .bar-chart {
+        height: 70vh;
     }
 
     .name{

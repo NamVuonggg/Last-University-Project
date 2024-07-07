@@ -8,7 +8,7 @@
                 <RouterLink to="/topics/cv/intern" style="text-decoration: none; color: inherit">
                     <Button class="w-full p-4 border-2 border-gray-900 bg-white text-gray-900 hover:bg-red-400 hover:text-cyan-50 flex justify-content-between align-items-center">
                         <span>
-                            CV intern
+                            CV for internship
                         </span>
                         <img src="https://cdn-icons-png.flaticon.com/128/16608/16608472.png" width="50px">
                     </Button>
