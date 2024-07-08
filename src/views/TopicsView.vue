@@ -66,6 +66,17 @@
                         <i class="pi pi-angle-right" style="font-size: 1rem"></i>
                     </Button>
                 </div>
+                <div class="col-12 md:col-6 xl:col-4">
+                    <RouterLink to="/topics/news" style="text-decoration: none; color: inherit;">
+                        <Button class="p-4 w-full border-round-xl flex justify-content-between bg-white border-2 border-gray-900 text-gray-900 hover:bg-red-400 hover:text-cyan-50">
+                            <div class="flex align-items-center">
+                                <img src="https://cdn-icons-png.flaticon.com/128/2540/2540832.png" width="45px" alt="">
+                                <span class="ml-5 font-bold">Business news</span>
+                            </div>
+                            <i class="pi pi-angle-right" style="font-size: 1rem"></i>
+                        </Button>
+                    </RouterLink>
+                </div>
             </div>
         </div>
 </template>

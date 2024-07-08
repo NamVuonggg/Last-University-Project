@@ -218,15 +218,15 @@ const abilityChart = ref({
 
                     <div class="mt-5">
                         <div class="objective-title font-bold text-xl text-green-500">INTEREST</div>
-                        <div class="mt-4 flex flex-column gap-2">
-                            <Chip label="Basketball" image="https://cdn-icons-png.flaticon.com/128/5285/5285691.png" />
-                            <Chip label="Reading books" image="https://cdn-icons-png.flaticon.com/128/3227/3227053.png" />
-                            <Chip label="Coding" image="https://cdn-icons-png.flaticon.com/128/2115/2115955.png" />
-                            <Chip label="Music" image="https://cdn-icons-png.flaticon.com/128/1895/1895657.png" />
-                            <Chip label="Traveling" image="https://cdn-icons-png.flaticon.com/128/4283/4283062.png" />
-                            <Chip label="Science" image="https://cdn-icons-png.flaticon.com/128/748/748893.png" />
-                            <Chip label="Food" image="https://cdn-icons-png.flaticon.com/128/1037/1037762.png" />
-                            <Chip label="Investment" image="https://cdn-icons-png.flaticon.com/128/3310/3310653.png" />
+                        <div class="mt-4 flex flex-column gap-3">
+                            <Chip class="w-15rem" label="Basketball" image="https://cdn-icons-png.flaticon.com/128/5285/5285691.png" />
+                            <Chip class="w-15rem" label="Reading books" image="https://cdn-icons-png.flaticon.com/128/3227/3227053.png" />
+                            <Chip class="w-15rem" label="Coding" image="https://cdn-icons-png.flaticon.com/128/2115/2115955.png" />
+                            <Chip class="w-15rem" label="Music" image="https://cdn-icons-png.flaticon.com/128/1895/1895657.png" />
+                            <Chip class="w-15rem" label="Traveling" image="https://cdn-icons-png.flaticon.com/128/4283/4283062.png" />
+                            <Chip class="w-15rem" label="Science" image="https://cdn-icons-png.flaticon.com/128/748/748893.png" />
+                            <Chip class="w-15rem" label="Food" image="https://cdn-icons-png.flaticon.com/128/1037/1037762.png" />
+                            <Chip class="w-15rem" label="Investment" image="https://cdn-icons-png.flaticon.com/128/3310/3310653.png" />
                         </div>
                     </div>
                 </div>

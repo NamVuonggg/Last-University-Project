@@ -17,6 +17,7 @@ import VocabsTable from "@/views/vocabularies/VocabsTable.vue";
 import AmericaEntFnb from "@/views/enterprises/america/FoodAndBeverage/AmericaEntFnb.vue";
 import MyCV from "@/views/cv/MyCV.vue";
 import CVintern from "@/views/cv/CV types/CVintern.vue";
+import News from "@/views/news/NewsTypes.vue";
 
 export const router = createRouter({
     history: createWebHistory(),
@@ -74,6 +75,21 @@ export const router = createRouter({
       component: VocabsTable
     },
     {
+      path:"/topics/cv",
+      name:"my-cv",
+      component: MyCV,
+    },
+    {
+      path: "/topics/cv/intern",
+      name:"intern-cv",
+      component: CVintern,
+    },
+    {
+      path: "/topics/news",
+      name:"news",
+      component: News,
+    },
+    {
       path: "/country",
       name: "enterprises-country-select",
       component: CountrySelect
@@ -103,15 +119,6 @@ export const router = createRouter({
       name: "america-ent-fnb",
       component: AmericaEntFnb
     },
-    {
-      path:"/topics/cv",
-      name:"my-cv",
-      component: MyCV,
-    },
-    {
-      path: "/topics/cv/intern",
-      name:"intern-cv",
-      component: CVintern,
-    }
+    
   ]
 });

@@ -37,7 +37,7 @@ const store = useNoteStore();
         <div class="flex flex-column align-items-center">
             <div class="flex flex-column gap-5">
                 <div>
-                    <div class="thesis-txt font-bold text-6xl mb-4">What does thesis asissantant<span class="text-red-500">have</span> ?</div>
+                    <div class="thesis-txt font-bold text-6xl mb-4">What does thesis asissantant<span class="text-red-500"> have</span> ?</div>
                     <div class="text-2xl">It has a company's categories separate function for me to choose different types of companies that I want to learn about.</div>
                     <div class="text-xl mt-4">It also has a memo function where you can add notes in the memo section when you find any interesting points about the information you are looking for.</div>
                 </div>
@@ -108,15 +108,16 @@ const store = useNoteStore();
 @import url('https://fonts.googleapis.com/css2?family=Playwrite+NL:wght@100..400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lilita+One&family=Playwrite+NL:wght@100..400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lilita+One&family=Playwrite+NL:wght@100..400&family=Shadows+Into+Light&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Honk&family=Rubik+Doodle+Shadow&display=swap');
 .container{
     padding : 0 20%;
 
     .thesis-txt{
-        font-family: "Shadows Into Light"
+        font-family: "Rubik Doodle Shadow"
     };
 
     .note-txt{
-        font-family: "Shadows Into Light"
+        font-family: "Playwrite NL"
     };
 }
 
