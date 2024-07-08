@@ -13,8 +13,7 @@ const notesToShow = computed(() =>{
 </script>
 
 <template>
-        <p class="text-center mt-8 m-auto" v-if="!notesToShow.length" style="opacity: 0.3; font-size: 20px;">There is no note availale yet !</p>
-        <div class="grid">
+        <div class="grid mt-4">
             <div class="col-12 md:col-6 xl:col-4" v-for="note in notesToShow" :key="note.id">
                 <div class="p-4 bg-yellow-300 w-full border-round-xl flex flex-column gap-6">
                     <div class="upper-content">
@@ -34,6 +33,8 @@ const notesToShow = computed(() =>{
                 </div>
             </div>
         </div>
+        <div class="h-15rem"></div>
+        <p class="text-center mt-8 m-auto" v-if="!notesToShow.length" style="opacity: 0.3; font-size: 20px;">There is no note availale yet !</p>
 </template>
 
 <style scoped></style>

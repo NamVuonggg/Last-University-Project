@@ -3,7 +3,7 @@ import { ref, reactive, computed } from 'vue';
 import { useToast } from "primevue/usetoast";
 
 export const useNoteStore = defineStore('note', () =>{
-    const notes = reactive([]);
+    const notes = reactive( JSON.parse(localStorage.getItem('notes')) || []);
 
     const toast = useToast();
     const showSuccess = () => {
@@ -20,6 +20,7 @@ export const useNoteStore = defineStore('note', () =>{
 
     const noteTitle = ref();
     const noteContent = ref();
+    
     const textEmptyError = ref(false)
 
     const addNote = () =>{
@@ -28,7 +29,7 @@ export const useNoteStore = defineStore('note', () =>{
                 id: notes.length ? notes.length + 1 : 1,
                 title: noteTitle.value,
                 content: noteContent.value,
-                date: new Date().toLocaleDateString(),
+                date: new Date().toLocaleDateString("fr-CA"),
                 important: false,
             });
             closeModal();

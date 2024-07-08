@@ -1,19 +1,23 @@
 <script setup>
 import { useRoute } from "vue-router";
 import { useEntTechDataStore } from "@/stores/america-ent-tech-data";
-const store = useEntTechDataStore();
+const TechStore = useEntTechDataStore();
 
 import { useNoteStore } from '@/stores/noteview';
 import AddNoteModal from "@/components/AddNote/AddNoteModal.vue";
-const notestore = useNoteStore();
+const store = useNoteStore();
 const route = useRoute();
-const data = store.datas.find(d => d.id === parseInt(route.params.id));
+const data = TechStore.datas.find(d => d.id === parseInt(route.params.id));
+store.$subscribe((mutation, state) => {
+  localStorage.setItem('notes', JSON.stringify(state.notes))
+});
+
 </script>
 
 <template>
     <Toast class="mt-6" />
-    <AddNoteModal v-if="notestore.modalIsActive"/>
-    <Button @click="notestore.activeNoteModal" class="fixed bottom-0 left-0 p-3">Take Note</Button>
+    <AddNoteModal v-if="store.modalIsActive"/>
+    <Button @click="store.activeNoteModal" class="fixed bottom-0 left-0 p-3">Take Note</Button>
     <div class="container m-auto">
         
         <div class="text-center text-7xl font-bold">{{ data.name }}</div>

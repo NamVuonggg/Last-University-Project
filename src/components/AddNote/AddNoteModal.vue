@@ -7,9 +7,9 @@ const store = useNoteStore();
 <div class="overlay" @click="store.closeModal"></div>
 <div class="container">
     <div class="newnote-modal">
-        <div class="bg-blue-50 flex flex-column card border-round-xl p-6 w-30rem m-auto">
+        <div class="bg-white flex flex-column card border-round-xl p-6 w-30rem m-auto">
             <div class="flex align-items-center justify-content-between mb-4">
-                <span class="font-bold text-2xl">Add new note</span>
+                <span class="font-bold text-2xl">New note</span>
                 <div class="text-right cursor-pointer" @click="store.closeModal"><i class="pi pi-times" style="color: black"></i></div>
             </div>
             <span class="text-red-500 mb-3 text-center" v-if="store.textEmptyError">Fill all the blanks below before adding</span>
