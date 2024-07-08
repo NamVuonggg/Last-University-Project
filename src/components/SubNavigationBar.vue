@@ -1,7 +1,10 @@
 <script setup>
-    import { useHomeStore } from "@/stores/homeview";
-    import SideBar from "@/components/SideBarOfSubNavBar.vue";
-    const store = useHomeStore();
+import { useHomeStore } from "@/stores/homeview";
+import SideBar from "@/components/SideBarOfSubNavBar.vue";
+const store = useHomeStore();
+store.$subscribe((mutation, state) => {
+  localStorage.setItem('deadlineDate', JSON.stringify(state.deadlineDate))
+});
 </script>
 
 

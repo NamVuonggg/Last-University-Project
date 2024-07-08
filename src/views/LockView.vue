@@ -4,7 +4,7 @@ const store = useHomeStore();
 </script>
 
 <template>
-    <div class="flex flex-column justify-content-center align-items-center container">
+    <div class="flex flex-column justify-content-center align-items-center container mt-8">
         <span>Enter Password</span>
         <div class="card flex justify-content-center mt-3">
             <InputOtp v-model="store.PasswordValue" mask @keyup.enter="store.PasswordCheck"/>
@@ -19,7 +19,7 @@ const store = useHomeStore();
         </RouterLink>
     </div>
 
-    <div class="h-30rem"></div>
+    <div class="h-25rem"></div>
 </template>
 
 <style lang="scss" scoped>

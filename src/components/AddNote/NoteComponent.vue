@@ -33,8 +33,8 @@ const notesToShow = computed(() =>{
                 </div>
             </div>
         </div>
-        <div class="h-15rem"></div>
-        <p class="text-center mt-8 m-auto" v-if="!notesToShow.length" style="opacity: 0.3; font-size: 20px;">There is no note availale yet !</p>
+        <div class="h-10rem"></div>
+        <p class="text-center m-auto" v-if="!notesToShow.length" style="opacity: 0.3; font-size: 20px;">There is no note availale yet !</p>
 </template>
 
 <style scoped></style>

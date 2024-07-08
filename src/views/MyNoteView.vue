@@ -12,7 +12,6 @@ store.$subscribe((mutation, state) => {
 </script>
 
 <template>
-    <Toast class="mt-6"/>
     <div class="container">
         <div class="flex align-items-center gap-3">
             <Button @click="store.activeNoteModal" class="p-3 border-2 border-gray-900 bg-white text-gray-900 hover:bg-red-400 hover:text-cyan-50 ">+ Add task</Button>
@@ -20,10 +19,9 @@ store.$subscribe((mutation, state) => {
         </div>
         <NoteComponent :showImportant = "showImportant"/>
     </div>
-
+    
     <AddNoteModal v-if="store.modalIsActive"/>
-
-    <div class="h-20rem"></div>
+    <Toast style="margin-top: 9rem"/>
 </template>
 
 <style lang="scss" scoped>

@@ -37,11 +37,13 @@ export const useHomeStore = defineStore('home', () =>{
     }
   }
   const IncorrectPasswordMess = ref(false)
-  const date = new Date();
-  const deadlineDate = ref();
 
-
-    return { 
+  const date = new Date().toLocaleDateString('en-CA');
+  
+  const deadlineDate = ref(JSON.parse(localStorage.getItem('deadlineDate') || null));
+    
+  
+  return { 
       navSearchValue, 
       selectedCountries, 
       countries, 
