@@ -5,14 +5,18 @@ import NoteComponent from "@/components/AddNote/NoteComponent.vue"
 import { useNoteStore } from '@/stores/noteview';
 const store = useNoteStore();
 const showImportant = ref(false);
+store.$subscribe((mutation, state) => {
+  localStorage.setItem('notes', JSON.stringify(state.notes))
+});
+
 </script>
 
 <template>
     <Toast class="mt-6"/>
     <div class="container">
         <div class="flex align-items-center gap-3">
-            <Button @click="store.activeNoteModal" class="mb-5">+ Add task</Button>
-            <Button @click="showImportant = !showImportant" class="mb-5 bg-red-500 border-none hover:bg-red-700">{{ showImportant ? 'Show All Notes' : 'Show Important Notes' }}</Button>
+            <Button @click="store.activeNoteModal" class="p-3 border-2 border-gray-900 bg-white text-gray-900 hover:bg-red-400 hover:text-cyan-50 ">+ Add task</Button>
+            <Button @click="showImportant = !showImportant" class="p-3 border-2 border-gray-900 bg-teal-600 border-none hover:bg-orange-400 hover:text-gray-900">{{ showImportant ? 'Show All Notes' : 'Show Important Notes' }}</Button>
         </div>
         <NoteComponent :showImportant = "showImportant"/>
     </div>
