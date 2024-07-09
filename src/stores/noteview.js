@@ -29,7 +29,7 @@ export const useNoteStore = defineStore('note', () =>{
                 id: notes.length ? notes.length + 1 : 1,
                 title: noteTitle.value,
                 content: noteContent.value,
-                date: new Date().toLocaleDateString("fr-CA"),
+                date: new Date().toLocaleDateString("en-CA"),
                 important: false,
             });
             closeModal();
