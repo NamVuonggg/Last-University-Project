@@ -15,7 +15,7 @@ store.$subscribe((mutation, state) => {
 </script>
 
 <template>
-    <Toast class="mt-6" />
+    <Toast style="margin-top: 9rem"/>
     <AddNoteModal v-if="store.modalIsActive"/>
     <Button @click="store.activeNoteModal" class="fixed bottom-0 left-0 p-3">Take Note</Button>
     <div class="container m-auto">

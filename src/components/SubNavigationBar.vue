@@ -30,7 +30,7 @@ store.$subscribe((mutation, state) => {
             <span class="text-cyan-50">-</span>
             <div class="card flex justify-content-center align-items-center gap-2 text-cyan-50">
                 <span>Deadline:</span>
-                <Calendar v-model="store.deadlineDate" class="w-8rem"/>
+                <Calendar dateFormat="yy/mm/dd" showButtonBar v-model="store.deadlineDate" class="w-8rem"/>
             </div>
         </div>
     </div>

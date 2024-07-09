@@ -96,7 +96,7 @@ const store = useNoteStore();
                 <IntroduceButtons />
             </div>
             <div class="h-5rem"></div>
-            <div v-animateonscroll="{ enterClass: 'flipright', leaveClass: 'fadeout' }" class="border-round animation-duration-1000 col-12 md:col-6 xl:col-6 animation-ease-in-out w-full">
+            <div v-animateonscroll="{ enterClass: 'flipleft', leaveClass: 'fadeout' }" class="border-round animation-duration-1000 col-12 md:col-6 xl:col-6 animation-ease-in-out w-full">
                     <img src="../../assets/images/Screenshot 2024-06-15 133708.png" class="border-round-2xl" width="100%" alt="">
             </div>
         </div>   
@@ -117,7 +117,7 @@ const store = useNoteStore();
     };
 
     .note-txt{
-        font-family: "Playwrite NL"
+        font-family: "Shadows Into Light"
     };
 }
 

@@ -42,7 +42,6 @@ export const useHomeStore = defineStore('home', () =>{
   
   const deadlineDate = ref(JSON.parse(localStorage.getItem('deadlineDate') || null));
     
-  
   return { 
       navSearchValue, 
       selectedCountries, 
